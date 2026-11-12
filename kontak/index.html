@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO On-Page Meta Data -->
-  <title>Hubungi Kami – Konsultasi &amp; Jasa Buat Absen Kelas Online</title>
-  <meta name="description" content="Ingin buat absen siswa dan buat absen kelas online tanpa ribet? Hubungi tim jasa absen kami untuk demo gratis &amp; bantuan input data master sekolah Anda!">
-  <meta name="keywords" content="buat absen kelas, jasa absen, buat absen, buat absen siswa, buat absen kehadiran, jasa absen online, presensi online sekolah, aplikasi absen mudah, operator presensi sekolah">
+  <title>Hubungi Kami — Konsultasi &amp; Pengadaan Sistem Presensi Sekolah</title>
+  <meta name="description" content="Konsultasi gratis pengadaan aplikasi absen siswa online per mata pelajaran dan sistem presensi sekolah terima beres. Dapatkan proposal resmi dan akses demo dalam 5 menit.">
+  <meta name="keywords" content="konsultasi absen online, jasa buat absen kelas, pengadaan aplikasi sekolah, presensi online sekolah, proposal aplikasi absen, bantuan teknis presensi">
   <link rel="canonical" href="https://domainanda.com/kontak/">
   
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domainanda.com/kontak/">
-  <meta property="og:title" content="Hubungi Kami – Konsultasi &amp; Jasa Buat Absen Kelas Online">
+  <meta property="og:title" content="Hubungi Kami — Konsultasi &amp; Pengadaan Sistem Presensi Sekolah">
   <meta property="og:description" content="Layanan konsultasi, uji coba demo gratis, dan pengajuan penawaran resmi sistem presensi sekolah terima beres.">
   <meta property="og:image" content="https://domainanda.com/assets/og-image-kontak.jpg">
 
@@ -22,246 +22,610 @@
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Hubungi Kami - Konsultasi & Jasa Buat Absen Kelas Online",
+    "name": "Hubungi Kami - Konsultasi & Pengadaan Sistem Presensi Sekolah",
     "description": "Halaman kontak resmi penyedia jasa buat absen kelas dan presensi online sekolah terima beres.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Presensi Project",
+      "url": "https://domainanda.com/"
+    },
     "mainEntity": {
       "@type": "Organization",
-      "name": "ABSI Presensi Sekolah",
+      "name": "Presensi Project",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Support & Sales",
+        "telephone": "+62-812-3456-7890",
+        "email": "kontak@domainanda.com",
         "availableLanguage": ["Indonesian"]
       }
     }
   }
   </script>
 
-  <!-- Stylesheet Tailwind CSS -->
+  <!-- Tailwind CSS Compiled Stylesheet -->
   <link rel="stylesheet" href="/dist/output.css">
-  <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-600 selection:text-white">
 
-  <!-- Bagian Header & Navigasi Utama -->
-  <header>
-    <nav aria-label="Navigasi Utama">
-      <a href="/">
-        <strong>ABSI Presensi Sekolah</strong>
-      </a>
-      <ul>
-        <li><a href="/">Beranda</a></li>
-        <li><a href="/fitur/">Fitur</a></li>
-        <li><a href="/harga/">Harga</a></li>
-        <li><a href="/demo/">Demo</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/tentang-kami/">Tentang Kami</a></li>
-        <li><a href="/kontak/">Hubungi Kami</a></li>
-      </ul>
+  <!-- =========================================================================
+       HEADER & NAVIGATION (STANDARDIZED DESKTOP + MOBILE DRAWER)
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        
+        <!-- Brand Identity -->
+        <a href="/" class="flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 rounded-lg">
+          <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-700 text-white font-bold text-lg shadow-xs">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold tracking-tight text-slate-900 leading-tight">Presensi Project</span>
+            <span class="text-xs font-medium text-slate-500 leading-tight">Sistem Presensi Sekolah Terima Beres</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Navigasi Utama" class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition-colors">Beranda</a>
+          <a href="/fitur/" class="hover:text-slate-900 transition-colors">Fitur</a>
+          <a href="/harga/" class="hover:text-slate-900 transition-colors">Paket Harga</a>
+          <a href="/demo/" class="hover:text-slate-900 transition-colors">Demo</a>
+          <a href="/tentang-kami/" class="hover:text-slate-900 transition-colors">Tentang Kami</a>
+          <a href="/kontak/" aria-current="page" class="text-slate-900 font-semibold border-b-2 border-emerald-700 pb-1">Kontak</a>
+          <a href="/blog/" class="hover:text-slate-900 transition-colors">Blog</a>
+        </nav>
+
+        <!-- Header CTA Action -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Pengadaan%20Aplikasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+            <span>Chat WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" class="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700" aria-label="Buka Menu Navigasi">
+            <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-nav" aria-label="Navigasi Mobile" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-2 shadow-lg">
+      <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Beranda</a>
+      <a href="/fitur/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Fitur</a>
+      <a href="/harga/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Paket Harga</a>
+      <a href="/demo/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Demo Aplikasi</a>
+      <a href="/tentang-kami/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Tentang Kami</a>
+      <a href="/kontak/" aria-current="page" class="block px-3 py-2 rounded-md text-base font-semibold text-emerald-800 bg-emerald-50">Kontak</a>
+      <a href="/blog/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Blog</a>
+      <div class="pt-3 border-t border-slate-100">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Pengadaan%20Aplikasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-base font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+          Hubungi Admin via WhatsApp
+        </a>
+      </div>
     </nav>
   </header>
 
-  <!-- Konten Utama Halaman Kontak -->
-  <main>
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
 
-    <!-- SECTION 1: HERO SECTION (Ajakan Konsultasi & Demo Tanpa Komitmen) -->
-    <section id="hero-kontak" aria-labelledby="hero-heading">
-      <header>
-        <p><strong>Layanan Konsultasi &amp; Pendampingan Sekolah (Respon Cepat)</strong></p>
-        <h1 id="hero-heading">
-          Siap Buat Absen Kelas Digital Tanpa Ribet? Hubungi Tim Jasa Absen Kami!
-        </h1>
-      </header>
+    <!-- -----------------------------------------------------------------------
+         SECTION 1: HERO SECTION
+         ----------------------------------------------------------------------- -->
+    <section id="hero-kontak" class="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200" aria-labelledby="hero-heading">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl space-y-6">
+          
+          <!-- Subhead Kicker Status -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-900">
+            <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
+            <span>Konsultasi &amp; Pendampingan Sekolah — Respon &lt; 5 Menit</span>
+          </div>
 
-      <p>
-        Baik Anda baru ingin melihat tampilan live demo, menanyakan kecocokan sistem dengan kurikulum sekolah Anda, atau langsung ingin menyerahkan file Excel siswa untuk kami bantu setup dari nol—tim kami siap membantu Anda hari ini.
-      </p>
+          <!-- Main Page Title -->
+          <h1 id="hero-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight text-balance">
+            Siap Buat Absen Kelas Digital Tanpa Ribet? Hubungi Tim Kami!
+          </h1>
 
-      <div>
-        <a href="#jalur-kontak">Pilih Jalur Kontak</a>
-        <a href="#persiapan-data">Panduan Persiapan Data</a>
+          <!-- Deskripsi Pengantar -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-[50ch] text-pretty">
+            Baik Anda ingin melihat simulasi demo, berkonsultasi mengenai fleksibilitas SPJ dana BOS, atau langsung menyerahkan file data siswa untuk kami setup dari awal—tim teknis kami siap mendampingi.
+          </p>
+
+          <!-- Quick Jump Links -->
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a href="#jalur-kontak" class="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-900 px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
+              <span>Pilih Saluran Komunikasi</span>
+              <svg class="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+              </svg>
+            </a>
+            <a href="#persiapan-data" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-800 hover:bg-slate-50 hover:border-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
+              Panduan Persiapan Data Sekolah
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- SECTION 2: 2 JALUR KONTAK UTAMA (Direct WhatsApp vs Form Pengajuan Demo) -->
-    <section id="jalur-kontak" aria-labelledby="jalur-heading">
-      <header>
-        <h2 id="jalur-heading">Pilih Cara Paling Nyaman untuk Memulai Presensi Online Sekolah Anda</h2>
-        <p>
-          Tersedia saluran komunikasi langsung via WhatsApp untuk respon cepat maupun formulir terstruktur untuk pengajuan dokumen proposal resmi sekolah.
+    <!-- -----------------------------------------------------------------------
+         SECTION 2: 2 JALUR KOMUNIKASI (WHATSAPP LANGSUNG VS FORM PROPOSAL)
+         ----------------------------------------------------------------------- -->
+    <section id="jalur-kontak" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200" aria-labelledby="jalur-heading">
+      <div class="mx-auto max-w-7xl space-y-12">
+        
+        <div class="max-w-3xl">
+          <h2 id="jalur-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Saluran Komunikasi Resmi Presensi Project
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[50ch] text-pretty">
+            Tersedia saluran interaktif via WhatsApp untuk konsultasi cepat maupun formulir terstruktur bagi sekolah yang memerlukan dokumen proposal pengadaan resmi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Kolom Kiri: WhatsApp & Informasi Layanan (5 Kolom) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <article class="rounded-xl border border-slate-200 bg-white p-7 space-y-6 shadow-xs">
+              <div class="space-y-2 border-b border-slate-100 pb-5">
+                <span class="text-xs font-mono font-bold text-slate-700 uppercase tracking-wider">Jalur 01 &bull; Respon Cepat</span>
+                <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 text-balance">
+                  <svg class="h-5 w-5 text-emerald-700 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                  </svg>
+                  <span>Chat Langsung via WhatsApp</span>
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed text-pretty max-w-[50ch]">
+                  Ideal untuk Kepala Sekolah, Wakasek Kurikulum, dan staf TU yang ingin langsung berdiskusi teknis atau meminta link akses demo instan di HP.
+                </p>
+              </div>
+
+              <address class="space-y-4 not-italic text-sm">
+                <div class="flex items-start gap-3">
+                  <div class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-emerald-50 text-emerald-800">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">WhatsApp &bull; Layanan Cepat</span>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Pengadaan%20Aplikasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="font-bold text-slate-900 hover:text-emerald-700 transition-colors">
+                      +62 812-3456-7890
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-slate-100 text-slate-700">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">Email Korespondensi Resmi</span>
+                    <a href="mailto:kontak@domainanda.com" class="font-semibold text-slate-900 hover:text-emerald-700 transition-colors">
+                      kontak@domainanda.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-slate-100 text-slate-700">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">Jam Operasional Layanan</span>
+                    <p class="text-slate-700 font-medium">Senin – Sabtu (07.30 – 20.00 WIB / WITA)</p>
+                  </div>
+                </div>
+              </address>
+
+              <div class="pt-4 border-t border-slate-100">
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Pengadaan%20Aplikasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-700 px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+                  <span>Buka Chat WhatsApp Sekarang</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card Jaminan Pelayanan -->
+            <div class="rounded-xl border border-slate-200 bg-white p-6 space-y-3 shadow-xs">
+              <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider">Komitmen Pelayanan:</h4>
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                <li class="flex items-center gap-2">
+                  <svg class="h-4 w-4 text-emerald-700 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Kwitansi &amp; Invoice Resmi untuk SPJ BOS</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="h-4 w-4 text-emerald-700 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Bantuan Input Data Master 100% Gratis</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="h-4 w-4 text-emerald-700 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Pendampingan Onboarding Guru &amp; Operator TU</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Kolom Kanan: Formulir Permintaan Proposal Resmi (7 Kolom) -->
+          <div class="lg:col-span-7">
+            <article class="rounded-xl border border-slate-200 bg-white p-7 sm:p-9 space-y-6 shadow-xs">
+              <div class="space-y-2 border-b border-slate-100 pb-5">
+                <span class="text-xs font-mono font-bold text-slate-700 uppercase tracking-wider">Jalur 02 &bull; Dokumen Formal</span>
+                <h3 class="text-2xl font-bold text-slate-900 text-balance">
+                  Formulir Permintaan Proposal &amp; Akses Demo
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed text-pretty max-w-[50ch]">
+                  Lengkapi data singkat berikut untuk menerima draft proposal penawaran pengadaan resmi, spesifikasi teknis cloud server, dan jadwal simulasi khusus sekolah Anda.
+                </p>
+              </div>
+
+              <form action="#" method="post" class="space-y-5" onsubmit="event.preventDefault(); alert('Terima kasih. Permintaan proposal Anda telah diterima. Tim Presensi Project akan segera menghubungi nomor WhatsApp Anda.');">
+                
+                <div class="space-y-1.5">
+                  <label for="nama_lengkap" class="block text-sm font-semibold text-slate-900">
+                    Nama Lengkap &amp; Jabatan:
+                  </label>
+                  <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Contoh: Budi Santoso, S.Pd. (Wakasek Kurikulum / Guru)" required class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-500 focus:border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1.5">
+                    <label for="nama_sekolah" class="block text-sm font-semibold text-slate-900">
+                      Nama Sekolah / Madrasah:
+                    </label>
+                    <input type="text" id="nama_sekolah" name="nama_sekolah" placeholder="Contoh: SMP / SMA Budi Mulia" required class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-500 focus:border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+                  </div>
+
+                  <div class="space-y-1.5">
+                    <label for="no_whatsapp" class="block text-sm font-semibold text-slate-900">
+                      Nomor WhatsApp Aktif:
+                    </label>
+                    <input type="tel" id="no_whatsapp" name="no_whatsapp" placeholder="Contoh: 081234567890" required class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-500 focus:border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+                  </div>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="pilihan_paket" class="block text-sm font-semibold text-slate-900">
+                    Pilihan Paket Layanan yang Dibutuhkan:
+                  </label>
+                  <select id="pilihan_paket" name="pilihan_paket" required class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 focus:border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+                    <option value="">-- Pilih Jenis Layanan --</option>
+                    <option value="paket_mapel">Paket Fokus: Web Absen Mapel Siswa (Terima Beres)</option>
+                    <option value="paket_bundling">Paket Bundling: Absen Mapel Siswa + Absen Guru GPS Lokasi Sekolah</option>
+                    <option value="coba_demo">Hanya Ingin Uji Coba Akun Demo Terlebih Dahulu</option>
+                  </select>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="catatan" class="block text-sm font-semibold text-slate-900">
+                    Catatan Kebutuhan / Estimasi Jumlah Rombel: <span class="font-normal text-slate-500">(Opsional)</span>
+                  </label>
+                  <textarea id="catatan" name="catatan" rows="3" placeholder="Sebutkan estimasi jumlah rombel atau kebutuhan khusus sekolah Anda..." class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-500 focus:border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-700"></textarea>
+                </div>
+
+                <div class="pt-2">
+                  <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-700 px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+                    <span>Kirim Permintaan Proposal &amp; Demo</span>
+                    <span aria-hidden="true">&rarr;</span>
+                  </button>
+                  <p class="text-xs text-slate-500 text-center pt-2">
+                    Data Anda aman dan hanya digunakan untuk keperluan pengiriman penawaran pengadaan sekolah.
+                  </p>
+                </div>
+
+              </form>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 3: PANDUAN PERSIAPAN DATA (3 LANGKAH TERIMA BERES)
+         ----------------------------------------------------------------------- -->
+    <section id="persiapan-data" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200" aria-labelledby="persiapan-heading">
+      <div class="mx-auto max-w-7xl space-y-12">
+        
+        <div class="max-w-3xl">
+          <h2 id="persiapan-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Tidak Perlu Pusing Teknis: 3 Bahan yang Perlu Sekolah Siapkan
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[50ch] text-pretty">
+            Banyak sekolah menunda digitalisasi karena khawatir staf TU kerepotan menyetting server. Dengan model Terima Beres, ini saja yang perlu Anda kirimkan:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <article class="rounded-xl border border-slate-200 bg-white p-7 space-y-3.5 shadow-xs flex flex-col justify-between">
+            <div class="space-y-3">
+              <span class="text-xs font-mono font-bold text-slate-700 uppercase tracking-wider">Langkah 01</span>
+              <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 text-balance">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+                </svg>
+                <span>Logo &amp; Nama Resmi Sekolah</span>
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed text-pretty max-w-[50ch]">
+                Kirimkan file logo resmi untuk kami sematkan di halaman login, banner sistem presensi, dan kop surat laporan rekapitulasi kehadiran PDF.
+              </p>
+            </div>
+            <div class="pt-2 text-xs font-medium text-slate-500 border-t border-slate-100">
+              Format: PNG transparan atau JPG berkualitas baik
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-white p-7 space-y-3.5 shadow-xs flex flex-col justify-between">
+            <div class="space-y-3">
+              <span class="text-xs font-mono font-bold text-slate-700 uppercase tracking-wider">Langkah 02</span>
+              <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 text-balance">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+                </svg>
+                <span>File Excel Data Siswa &amp; Kelas</span>
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed text-pretty max-w-[50ch]">
+                Format tabel bebas (unduhan Dapodik atau file absensi lama). Tim kami yang bertugas merapikan dan mengimpor seluruh data murid ke dalam database.
+              </p>
+            </div>
+            <div class="pt-2 text-xs font-medium text-slate-500 border-t border-slate-100">
+              Format: Excel (.xlsx) atau CSV dari TU
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-white p-7 space-y-3.5 shadow-xs flex flex-col justify-between">
+            <div class="space-y-3">
+              <span class="text-xs font-mono font-bold text-slate-700 uppercase tracking-wider">Langkah 03</span>
+              <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 text-balance">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+                </svg>
+                <span>Daftar Guru &amp; Mata Pelajaran</span>
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed text-pretty max-w-[50ch]">
+                Kirimkan daftar nama guru pengajar beserta mapel yang diampu agar akun masing-masing guru siap digunakan untuk mengabsen di kelas keesokan harinya.
+              </p>
+            </div>
+            <div class="pt-2 text-xs font-medium text-slate-500 border-t border-slate-100">
+              Format: Daftar jadwal pelajaran KBM sekolah
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 4: PRE-CONTACT FAQ ACCORDION
+         ----------------------------------------------------------------------- -->
+    <section id="faq-kontak" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200" aria-labelledby="faq-heading">
+      <div class="mx-auto max-w-4xl space-y-12">
+        
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 id="faq-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Pertanyaan Sebelum Anda Menghubungi Kami
+          </h2>
+          <p class="mt-3 text-slate-600 text-sm sm:text-base text-pretty max-w-[50ch] mx-auto">
+            Jawaban ringkas seputar proses uji coba, dukungan lintas wilayah, dan estimasi waktu persiapan sistem.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors" open>
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50">
+              <span class="text-balance">Apakah konsultasi dan uji coba demo dikenakan biaya?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-200 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[52ch]">
+                100% Gratis. Anda bebas berkonsultasi mengenai kebutuhan sekolah Anda dan mencoba simulasi antarmuka guru maupun laporan admin sebelum memutuskan berlangganan.
+              </p>
+            </div>
+          </details>
+
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors">
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50">
+              <span class="text-balance">Sekolah kami berada di luar kota / luar pulau, apakah bisa dibantu online?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-200 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[52ch]">
+                Sangat bisa. Seluruh sistem berbasis cloud web dan proses setup hingga input master data dikerjakan jarak jauh oleh tim teknis kami. Sekolah di seluruh Indonesia dapat langsung menggunakannya.
+              </p>
+            </div>
+          </details>
+
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors">
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50">
+              <span class="text-balance">Berapa lama waktu yang dibutuhkan sampai sistem bisa dipakai mengabsen di kelas?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-200 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[52ch]">
+                Proses setup domain, hosting privat, dan input data master awal biasanya selesai dalam 1 hingga 2 hari kerja setelah file data siswa dari sekolah kami terima.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 5: BOTTOM REASSURANCE CTA
+         ----------------------------------------------------------------------- -->
+    <section id="cta-kontak" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white" aria-labelledby="cta-heading">
+      <div class="mx-auto max-w-4xl text-center space-y-6">
+        
+        <h2 id="cta-heading" class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight text-balance">
+          Konsultasikan Kebutuhan Presensi Sekolah Anda Sekarang
+        </h2>
+        
+        <p class="text-base sm:text-lg text-slate-300 max-w-[50ch] mx-auto leading-relaxed text-pretty">
+          Tim spesialis kami siap membantu menghitung efisiensi pengeluaran dan memberikan solusi presensi digital terbaik sesuai kurikulum sekolah Anda.
         </p>
-      </header>
 
-      <!-- Jalur 1: Direct WhatsApp -->
-      <article id="kontak-wa" aria-labelledby="wa-heading">
-        <header>
-          <h3 id="wa-heading">1. Chat Langsung via WhatsApp (Respon &lt; 5 Menit)</h3>
-        </header>
-
-        <p>
-          Cocok bagi Kepala Sekolah, Wakasek Kurikulum, atau <strong>operator presensi sekolah</strong> yang ingin langsung mencoba akun demo di HP atau berdiskusi cepat mengenai teknis layanan Terima Beres kami.
-        </p>
-
-        <address>
-          <p><strong>Informasi Kontak Langsung:</strong></p>
-          <ul>
-            <li>WhatsApp / Telepon: <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20dari%20[Nama%20Sekolah]%20ingin%20tanya%20info%20dan%20coba%20demo%20Web%20Absen%20Mapel%20Sekolah">+62 812-3456-7890</a></li>
-            <li>Email Resmi: <a href="mailto:kontak@domainanda.com">kontak@domainanda.com</a></li>
-            <li>Jam Operasional Support: Senin – Sabtu (07.30 – 20.00 WIB / WITA)</li>
-          </ul>
-        </address>
-
-        <p>
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20dari%20[Nama%20Sekolah]%20ingin%20tanya%20info%20dan%20coba%20demo%20Web%20Absen%20Mapel%20Sekolah">
-            Chat Tim Kami di WhatsApp Sekarang &rarr;
+        <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Pengadaan%20Aplikasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 rounded-lg bg-emerald-700 px-7 py-4 text-base font-bold text-white shadow-lg hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-all">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+            <span>Hubungi via WhatsApp</span>
           </a>
-        </p>
-      </article>
+          <a href="/harga/" class="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-800 px-6 py-4 text-base font-semibold text-white hover:bg-slate-700 transition-colors">
+            Lihat Rincian Paket Harga &rarr;
+          </a>
+        </div>
 
-      <!-- Jalur 2: Formulir Permintaan Demo & Proposal -->
-      <article id="formulir-proposal" aria-labelledby="form-heading">
-        <header>
-          <h3 id="form-heading">2. Formulir Pengajuan Buat Absen Siswa &amp; Proposal Resmi</h3>
-        </header>
-
-        <p>
-          Butuh dokumen penawaran harga resmi untuk bahan rapat bersama manajemen yayasan atau Kepala Sekolah? Lengkapi data singkat berikut ini:
-        </p>
-
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Data Pemohon &amp; Kebutuhan Sekolah</legend>
-
-            <div>
-              <label for="nama_lengkap">Nama Lengkap &amp; Jabatan:</label>
-              <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Contoh: Budi Santoso - Wakasek Kurikulum / Operator" required>
-            </div>
-
-            <div>
-              <label for="nama_sekolah">Nama Sekolah &amp; Jenjang:</label>
-              <input type="text" id="nama_sekolah" name="nama_sekolah" placeholder="Contoh: SMP / SMA / SMK Teladan Mulia" required>
-            </div>
-
-            <div>
-              <label for="no_whatsapp">Nomor WhatsApp Aktif:</label>
-              <input type="tel" id="no_whatsapp" name="no_whatsapp" placeholder="Contoh: 081234567890 (Untuk pengiriman link akses demo)" required>
-            </div>
-
-            <div>
-              <label for="pilihan_paket">Kebutuhan Utama Sekolah:</label>
-              <select id="pilihan_paket" name="pilihan_paket" required>
-                <option value="">-- Pilih Jenis Layanan --</option>
-                <option value="paket_mapel">Paket Fokus: Web Absen Mapel Siswa (Terima Beres)</option>
-                <option value="paket_bundling">Paket Bundling: Absen Mapel Siswa + Absen Guru GPS Lokasi Sekolah</option>
-                <option value="coba_demo">Hanya Ingin Coba Akun Demo Terlebih Dahulu</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="catatan">Catatan / Estimasi Jumlah Rombel (Opsional):</label>
-              <textarea id="catatan" name="catatan" rows="3" placeholder="Tuliskan jika ada kebutuhan khusus atau jumlah kelas di sekolah Anda..."></textarea>
-            </div>
-
-            <div>
-              <button type="submit">Kirim Permintaan Demo &amp; Proposal</button>
-            </div>
-          </fieldset>
-        </form>
-      </article>
-    </section>
-
-    <!-- SECTION 3: PANDUAN PERSIAPAN DATA ("Apa yang Perlu Sekolah Siapkan?") -->
-    <section id="persiapan-data" aria-labelledby="persiapan-heading">
-      <header>
-        <h2 id="persiapan-heading">Tidak Perlu Pusing Teknis Saat Buat Absen Kehadiran Bersama Kami!</h2>
-        <p>
-          Banyak sekolah menunda <strong>buat absen</strong> digital karena khawatir staf TU mereka akan kerepotan menyetting server dan menginput data ratusan murid. Dengan layanan <strong>jasa absen online</strong> terima beres dari kami, ini saja yang perlu Anda siapkan setelah menghubungi kami:
-        </p>
-      </header>
-
-      <ol>
-        <li>
-          <h3>Logo &amp; Nama Resmi Sekolah</h3>
-          <p>
-            Untuk kami pasang di halaman depan web sekolah dan kop laporan rekapitulasi kehadiran PDF resmi sekolah Anda.
-          </p>
-        </li>
-        <li>
-          <h3>File Excel Data Siswa &amp; Kelas</h3>
-          <p>
-            Format tabel bebas (bisa berasal dari unduhan Dapodik atau daftar absen Excel yang sudah ada). Tim kami yang akan merapikan dan menginputkannya ke dalam <strong>aplikasi absen mudah</strong> kami.
-          </p>
-        </li>
-        <li>
-          <h3>Daftar Nama Guru &amp; Mata Pelajaran</h3>
-          <p>
-            Agar setiap guru langsung terdaftar ke jadwal mengajar dan siap melakukan pencatatan kehadiran di kelas keesokan harinya!
-          </p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- SECTION 4: MINI FAQ SEBELUM MENGHUBUNGI (Pre-Contact Reassurance) -->
-    <section id="faq-kontak" aria-labelledby="faq-heading">
-      <header>
-        <h2 id="faq-heading">Pertanyaan Singkat Sebelum Anda Menghubungi Kami</h2>
-      </header>
-
-      <details open>
-        <summary><strong>Apakah konsultasi dan mencoba akun demo dikenakan biaya?</strong></summary>
-        <p>
-          100% Gratis. Anda bebas mencoba simulasi mengabsen sebagai guru mapel maupun melihat hasil rekap otomatisnya sebagai admin sebelum memutuskan berlangganan paket kami.
-        </p>
-      </details>
-
-      <details>
-        <summary><strong>Sekolah kami berada di luar kota / luar pulau, apakah bisa dibantu sepenuhnya secara online?</strong></summary>
-        <p>
-          Sangat bisa. Karena seluruh sistem berbasis cloud web dan proses <strong>buat absen siswa</strong> hingga input data master awal dikerjakan sepenuhnya oleh tim teknis kami, sekolah dari seluruh wilayah Indonesia dapat langsung menggunakannya tanpa kendala jarak fisik.
-        </p>
-      </details>
-
-      <details>
-        <summary><strong>Berapa lama waktu yang dibutuhkan sampai sistem bisa dipakai mengabsen di kelas?</strong></summary>
-        <p>
-          Proses setup domain, cloud hosting, dan input data master awal biasanya selesai dalam 1 hingga 2 hari kerja setelah data Excel sekolah kami terima.
-        </p>
-      </details>
+      </div>
     </section>
 
   </main>
 
-  <!-- Bagian Footer Semantik -->
-  <footer>
-    <div>
-      <p><strong>ABSI Presensi Sekolah</strong></p>
-      <p>
-        Penyedia <strong>jasa absen</strong> dan sistem informasi presensi siswa terima beres untuk sekolah dan yayasan pendidikan di Indonesia.
-      </p>
+  <!-- =========================================================================
+       FOOTER (INSTITUTIONAL MULTI-COLUMN SEMANTIC)
+       ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 border-t border-slate-800 text-sm px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        
+        <!-- Kolom Brand & Ringkasan -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">Presensi Project</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm text-pretty">
+            Penyedia layanan <strong>jasa absen online</strong> dan sistem presensi sekolah terima beres. Membantu digitalisasi sekolah dan madrasah di seluruh Indonesia.
+          </p>
+          <div class="pt-2 text-xs text-slate-400">
+            Dikelola dengan server hosting privat terisolasi per institusi sekolah.
+          </div>
+        </div>
+
+        <!-- Kolom Navigasi Utama -->
+        <nav aria-label="Navigasi Footer" class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Halaman Utama</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Fitur Lengkap</a></li>
+            <li><a href="/harga/" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="/demo/" class="hover:text-white transition-colors">Demo Aplikasi</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Artikel &amp; Edukasi</a></li>
+          </ul>
+        </nav>
+
+        <!-- Kolom Modul & Layanan -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Modul Sistem</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Presensi Per Mapel</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Jurnal Mengajar Guru</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Notifikasi WhatsApp</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Rekapitulasi Otomatis</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Modul GPS Guru</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Kontak & Legal -->
+        <address class="space-y-3 not-italic">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Konsultasi &amp; Pengadaan</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/tentang-kami/" class="hover:text-white transition-colors">Tentang Kami</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Konsultasi Anggaran BOS</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Permintaan Invoice / SPJ</a></li>
+            <li class="pt-2 text-xs text-slate-400">
+              Jam Layanan: Senin – Jumat (08.00 – 17.00 WIB)
+            </li>
+          </ul>
+        </address>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 Presensi Project. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="flex items-center gap-6">
+          <a href="/kontak/" class="hover:text-white">Bantuan Onboarding</a>
+          <a href="/demo/" class="hover:text-white">Live Demo</a>
+          <a href="/" class="hover:text-white">Sitemap</a>
+        </div>
+      </div>
+
     </div>
-
-    <nav aria-label="Navigasi Footer">
-      <p><strong>Navigasi Halaman</strong></p>
-      <ul>
-        <li><a href="/">Beranda</a></li>
-        <li><a href="/fitur/">Fitur Lengkap</a></li>
-        <li><a href="/harga/">Paket Harga</a></li>
-        <li><a href="/demo/">Demo Aplikasi</a></li>
-        <li><a href="/blog/">Artikel &amp; Edukasi</a></li>
-      </ul>
-    </nav>
-
-    <address>
-      <p><strong>Layanan Konsultasi</strong></p>
-      <ul>
-        <li><a href="/tentang-kami/">Tentang Kami</a></li>
-        <li><a href="/kontak/">Chat WhatsApp CS</a></li>
-        <li><a href="/kontak/">Permintaan Demo Interaktif</a></li>
-        <li>Waktu Respon: Cepat (&lt; 5 Menit via WhatsApp)</li>
-      </ul>
-    </address>
-
-    <p><small>&copy; 2026 Sistem Presensi Digital Sekolah. Seluruh Hak Cipta Dilindungi.</small></p>
   </footer>
+
+  <!-- =========================================================================
+       VANILLA JAVASCRIPT: ACCESSIBLE MOBILE DRAWER TOGGLE
+       ========================================================================= -->
+  <script>
+    (function() {
+      const btn = document.getElementById('mobile-menu-btn');
+      const nav = document.getElementById('mobile-nav');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (btn && nav) {
+        btn.addEventListener('click', function() {
+          const isOpen = nav.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', isOpen);
+          if (iconOpen && iconClose) {
+            iconOpen.classList.toggle('hidden', isOpen);
+            iconClose.classList.toggle('hidden', !isOpen);
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
