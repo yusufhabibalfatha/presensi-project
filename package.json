@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "python3 -m http.server 3000",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "dev:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
