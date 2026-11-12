@@ -180,18 +180,264 @@
 
           <!-- Dual Call to Action -->
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a href="#simulator-presensi" class="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-900 px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
+              <span>Coba Simulator Interaktif di Bawah</span>
+              <svg class="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+              </svg>
+            </a>
             <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20mencoba%20Demo%20Aplikasi%20Presensi%20Sekolah%20dan%20minta%20link%20simulasinya" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 rounded-lg bg-emerald-700 px-6 py-3.5 text-base font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
               </svg>
-              <span>Minta Link Akses Demo via WhatsApp</span>
-            </a>
-            <a href="/kontak/" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-800 hover:bg-slate-50 hover:border-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
-              Jadwalkan Presentasi Zoom Khusus
+              <span>Minta Demo via WhatsApp</span>
             </a>
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         INTERACTIVE SIMULATOR SECTION (CLIENT-SIDE LIVE WIDGET)
+         ----------------------------------------------------------------------- -->
+    <section id="simulator-presensi" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white border-b border-slate-800" aria-labelledby="simulator-heading">
+      <div class="mx-auto max-w-5xl space-y-8">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-950 border border-emerald-800 text-xs font-semibold text-emerald-300">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            <span>Simulator Interaktif Presensi Sekolah</span>
+          </div>
+          <h2 id="simulator-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white text-balance">
+            Coba Alur Presensi KBM &amp; WhatsApp Gateway di Browser Anda
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 max-w-[50ch] mx-auto text-pretty">
+            Pilih kelas, tandai kehadiran siswa, isi ringkasan jurnal materi, dan lihat hasil broadcast laporan WhatsApp secara instan tanpa perlu registrasi.
+          </p>
+        </div>
+
+        <!-- Terminal Window Frame -->
+        <div class="rounded-xl border border-slate-800 bg-slate-950 shadow-2xl overflow-hidden">
+          
+          <!-- Window Header / Tab Bar -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 bg-slate-900 px-5 py-3.5 text-xs">
+            <div class="flex items-center gap-2">
+              <span class="h-3 w-3 rounded-full bg-slate-700"></span>
+              <span class="h-3 w-3 rounded-full bg-slate-700"></span>
+              <span class="h-3 w-3 rounded-full bg-slate-700"></span>
+              <span class="ml-2 font-mono text-slate-400">Presensi Project Sandbox Simulator</span>
+            </div>
+            <!-- Step Indicators -->
+            <div class="flex items-center gap-2 font-mono">
+              <span id="step-badge-1" class="px-2.5 py-1 rounded bg-emerald-700 text-white font-semibold">1. Jadwal</span>
+              <span class="text-slate-600">&rarr;</span>
+              <span id="step-badge-2" class="px-2.5 py-1 rounded bg-slate-800 text-slate-400 font-semibold">2. Presensi</span>
+              <span class="text-slate-600">&rarr;</span>
+              <span id="step-badge-3" class="px-2.5 py-1 rounded bg-slate-800 text-slate-400 font-semibold">3. Laporan WA</span>
+            </div>
+          </div>
+
+          <!-- STEP 1: PEMILIHAN JADWAL KBM -->
+          <div id="sim-step-1" class="p-6 sm:p-8 space-y-6">
+            <div class="space-y-1 border-b border-slate-800 pb-4">
+              <h3 class="text-lg font-bold text-white">Langkah 1: Tentukan Sesi Jadwal Mengajar Guru</h3>
+              <p class="text-xs sm:text-sm text-slate-400 max-w-[50ch] text-pretty">
+                Pilih unit sekolah, kelas, mata pelajaran, dan guru pengampu sesi KBM saat ini.
+              </p>
+            </div>
+
+            <form class="grid grid-cols-1 sm:grid-cols-2 gap-5" onsubmit="event.preventDefault();">
+              <div class="space-y-1.5">
+                <label for="sim-unit" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Unit / Jenjang Sekolah:</label>
+                <select id="sim-unit" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                  <option value="SMP Budi Utomo">SMP Budi Utomo</option>
+                  <option value="SMA Budi Utomo">SMA Budi Utomo</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="sim-kelas" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Rombel Kelas:</label>
+                <select id="sim-kelas" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                  <option value="Kelas VII-A">Kelas VII-A (32 Siswa)</option>
+                  <option value="Kelas VIII-B">Kelas VIII-B (30 Siswa)</option>
+                  <option value="Kelas IX-C">Kelas IX-C (31 Siswa)</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="sim-mapel" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Mata Pelajaran:</label>
+                <select id="sim-mapel" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                  <option value="Matematika">Matematika</option>
+                  <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                  <option value="IPA Terpadu">IPA Terpadu</option>
+                  <option value="Bahasa Inggris">Bahasa Inggris</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="sim-jam" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Jam Pelajaran (JP):</label>
+                <select id="sim-jam" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                  <option value="Jam ke 1 - 2 (07.30 - 08.50 WIB)">Jam ke 1 - 2 (07.30 - 08.50 WIB)</option>
+                  <option value="Jam ke 3 - 4 (09.05 - 10.25 WIB)">Jam ke 3 - 4 (09.05 - 10.25 WIB)</option>
+                  <option value="Jam ke 5 - 6 (10.40 - 12.00 WIB)">Jam ke 5 - 6 (10.40 - 12.00 WIB)</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5 sm:col-span-2">
+                <label for="sim-guru" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Guru Pengampu:</label>
+                <select id="sim-guru" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                  <option value="Drs. H. Mulyadi, M.Pd.">Drs. H. Mulyadi, M.Pd.</option>
+                  <option value="Siti Aminah, S.Si.">Siti Aminah, S.Si.</option>
+                  <option value="Bambang Suherman, S.Pd.">Bambang Suherman, S.Pd.</option>
+                </select>
+              </div>
+            </form>
+
+            <div class="pt-4 border-t border-slate-800 flex justify-end">
+              <button id="btn-step-1-next" type="button" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+                <span>Lanjut ke Daftar Siswa (Langkah 2)</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: PRESENSI SISWA & PENGISIAN JURNAL -->
+          <div id="sim-step-2" class="hidden p-6 sm:p-8 space-y-6">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-900 border border-slate-800 p-4 rounded-lg text-xs font-mono">
+              <div class="space-y-0.5">
+                <span class="text-slate-400">Sesi KBM:</span>
+                <span id="sim-session-summary" class="block font-bold text-emerald-400">SMP Budi Utomo &bull; Kelas VII-A &bull; Matematika</span>
+              </div>
+              <div class="space-y-0.5 sm:text-right">
+                <span class="text-slate-400">Guru:</span>
+                <span id="sim-teacher-summary" class="block font-bold text-white">Drs. H. Mulyadi, M.Pd.</span>
+              </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="flex items-center justify-between">
+              <div class="space-y-0.5">
+                <h3 class="text-base font-bold text-white">Daftar Hadir Siswa (Sampel 5 Siswa)</h3>
+                <p class="text-xs text-slate-400">Klik tombol status untuk mengubah kehadiran per anak.</p>
+              </div>
+              <button id="btn-all-present" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold transition-colors">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                </svg>
+                <span>Tandai Semua Hadir</span>
+              </button>
+            </div>
+
+            <!-- Students List Table -->
+            <div class="overflow-x-auto rounded-lg border border-slate-800 bg-slate-900/60">
+              <table class="w-full text-left text-xs">
+                <thead>
+                  <tr class="border-b border-slate-800 text-slate-400 bg-slate-900 font-mono">
+                    <th class="py-3 px-4">No</th>
+                    <th class="py-3 px-4">Nama Siswa / NISN</th>
+                    <th class="py-3 px-4 text-center">Status Kehadiran</th>
+                  </tr>
+                </thead>
+                <tbody id="sim-student-table" class="divide-y divide-slate-800">
+                  <!-- Populated by JavaScript -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Jurnal KBM Form -->
+            <div class="space-y-3 pt-2">
+              <h4 class="text-sm font-bold text-white">Jurnal KBM Wajib (Guru Mengajar):</h4>
+              <div class="space-y-3">
+                <div class="space-y-1">
+                  <label for="sim-materi" class="block text-xs font-semibold text-slate-300">
+                    Judul Materi Pembelajaran: <span class="text-rose-400">*Wajib Diisi</span>
+                  </label>
+                  <input type="text" id="sim-materi" value="Sistem Persamaan Linear Dua Variabel (SPLDV)" class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                </div>
+
+                <div class="space-y-1">
+                  <label for="sim-catatan" class="block text-xs font-semibold text-slate-300">
+                    Catatan Kejadian di Kelas: <span class="font-normal text-slate-500">(Opsional)</span>
+                  </label>
+                  <input type="text" id="sim-catatan" value="KBM berjalan lancar, seluruh siswa aktif berdiskusi." class="w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-white focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                </div>
+
+                <div id="sim-materi-alert" class="hidden rounded-lg bg-rose-950 border border-rose-800 p-3 text-xs text-rose-200">
+                  Judul materi pembelajaran tidak boleh kosong sebelum menyimpan absensi!
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+              <button id="btn-step-2-prev" type="button" class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 px-4 py-2.5 text-xs sm:text-sm font-semibold text-slate-300 hover:bg-slate-700 transition-colors">
+                <span aria-hidden="true">&larr;</span>
+                <span>Kembali</span>
+              </button>
+              <button id="btn-step-2-submit" type="button" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+                <span>Simpan &amp; Kirim Laporan WhatsApp</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: LAPORAN WHATSAPP GATEWAY -->
+          <div id="sim-step-3" class="hidden p-6 sm:p-8 space-y-6">
+            
+            <div class="rounded-xl border border-emerald-800 bg-emerald-950/60 p-4 sm:p-5 flex items-start gap-3.5">
+              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-700 text-white">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold text-white">Status Broadcast WhatsApp: 200 OK (TERKIRIM)</span>
+                </div>
+                <p class="text-xs text-emerald-200">
+                  Laporan otomatis diteruskan ke WhatsApp Grup Wali Murid melalui integrasi API Fonnte dalam 1,2 detik.
+                </p>
+              </div>
+            </div>
+
+            <!-- WhatsApp Chat Preview Bubble -->
+            <div class="space-y-2">
+              <span class="block text-xs font-mono uppercase tracking-wider text-slate-400 text-center">
+                Pratinjau Pesan yang Diterima di WhatsApp Grup Kelas:
+              </span>
+              
+              <div class="rounded-2xl border border-slate-700 bg-slate-900 p-5 max-w-lg mx-auto shadow-inner">
+                <div class="flex items-center gap-2 border-b border-slate-800 pb-3 mb-3 text-xs text-slate-400">
+                  <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                  <span class="font-bold text-white">WA Grup: <span id="wa-group-name">Wali Murid Kelas VII-A</span></span>
+                  <span class="ml-auto text-[11px]" id="wa-time-stamp">Hari ini, 08.50 WIB</span>
+                </div>
+                <pre id="wa-message-content" class="font-mono text-xs text-slate-200 leading-relaxed whitespace-pre-wrap select-all">
+                  <!-- Generated by JS -->
+                </pre>
+              </div>
+            </div>
+
+            <!-- Actions Bar -->
+            <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <button id="btn-sim-reset" type="button" class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 px-5 py-3 text-sm font-semibold text-slate-300 hover:bg-slate-700 transition-colors">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+                </svg>
+                <span>Ulangi / Coba Skenario Lain</span>
+              </button>
+
+              <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20sudah%20mencoba%20Simulator%20di%20web%20dan%20ingin%20minta%20Akses%20Demo%20Penuh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+                <span>Minta Demo Lengkap via WhatsApp</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </section>
 
@@ -524,10 +770,11 @@
   </footer>
 
   <!-- =========================================================================
-       VANILLA JAVASCRIPT: ACCESSIBLE MOBILE DRAWER TOGGLE
+       VANILLA JAVASCRIPT: ACCESSIBLE MOBILE DRAWER TOGGLE & INTERACTIVE SIMULATOR
        ========================================================================= -->
   <script>
     (function() {
+      // 1. Mobile Menu Drawer
       const btn = document.getElementById('mobile-menu-btn');
       const nav = document.getElementById('mobile-nav');
       const iconOpen = document.getElementById('menu-icon-open');
@@ -543,6 +790,212 @@
           }
         });
       }
+
+      // 2. Interactive Simulator Logic
+      const step1 = document.getElementById('sim-step-1');
+      const step2 = document.getElementById('sim-step-2');
+      const step3 = document.getElementById('sim-step-3');
+
+      const badge1 = document.getElementById('step-badge-1');
+      const badge2 = document.getElementById('step-badge-2');
+      const badge3 = document.getElementById('step-badge-3');
+
+      const btnStep1Next = document.getElementById('btn-step-1-next');
+      const btnStep2Prev = document.getElementById('btn-step-2-prev');
+      const btnStep2Submit = document.getElementById('btn-step-2-submit');
+      const btnAllPresent = document.getElementById('btn-all-present');
+      const btnSimReset = document.getElementById('btn-sim-reset');
+
+      const simUnit = document.getElementById('sim-unit');
+      const simKelas = document.getElementById('sim-kelas');
+      const simMapel = document.getElementById('sim-mapel');
+      const simJam = document.getElementById('sim-jam');
+      const simGuru = document.getElementById('sim-guru');
+
+      const sessionSummary = document.getElementById('sim-session-summary');
+      const teacherSummary = document.getElementById('sim-teacher-summary');
+      const studentTableBody = document.getElementById('sim-student-table');
+      const inputMateri = document.getElementById('sim-materi');
+      const inputCatatan = document.getElementById('sim-catatan');
+      const materiAlert = document.getElementById('sim-materi-alert');
+
+      const waGroupName = document.getElementById('wa-group-name');
+      const waTimeStamp = document.getElementById('wa-time-stamp');
+      const waMessageContent = document.getElementById('wa-message-content');
+
+      let students = [
+        { id: 1, name: 'Ahmad Fauzi', nisn: '00812341', status: 'H' },
+        { id: 2, name: 'Anisa Rahmawati', nisn: '00812342', status: 'H' },
+        { id: 3, name: 'Bagas Pratama', nisn: '00812343', status: 'S' },
+        { id: 4, name: 'Citra Kirana', nisn: '00812344', status: 'H' },
+        { id: 5, name: 'Dimas Wahyu', nisn: '00812345', status: 'H' }
+      ];
+
+      function setBadge(step) {
+        if (badge1 && badge2 && badge3) {
+          badge1.className = step === 1 ? 'px-2.5 py-1 rounded bg-emerald-700 text-white font-semibold' : 'px-2.5 py-1 rounded bg-slate-800 text-slate-400 font-semibold';
+          badge2.className = step === 2 ? 'px-2.5 py-1 rounded bg-emerald-700 text-white font-semibold' : 'px-2.5 py-1 rounded bg-slate-800 text-slate-400 font-semibold';
+          badge3.className = step === 3 ? 'px-2.5 py-1 rounded bg-emerald-700 text-white font-semibold' : 'px-2.5 py-1 rounded bg-slate-800 text-slate-400 font-semibold';
+        }
+      }
+
+      function renderStudents() {
+        if (!studentTableBody) return;
+        studentTableBody.innerHTML = '';
+
+        students.forEach((student, index) => {
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-slate-900/40 transition-colors';
+
+          const statuses = [
+            { code: 'H', label: 'Hadir', activeClass: 'bg-emerald-700 text-white font-bold' },
+            { code: 'S', label: 'Sakit', activeClass: 'bg-sky-700 text-white font-bold' },
+            { code: 'I', label: 'Izin', activeClass: 'bg-amber-700 text-white font-bold' },
+            { code: 'A', label: 'Alpa', activeClass: 'bg-rose-700 text-white font-bold' },
+            { code: 'T', label: 'Terlambat', activeClass: 'bg-slate-700 text-white font-bold' }
+          ];
+
+          let buttonsHtml = '';
+          statuses.forEach(s => {
+            const isActive = student.status === s.code;
+            const btnClass = isActive ? s.activeClass : 'bg-slate-800 text-slate-400 hover:bg-slate-700';
+            buttonsHtml += `<button type="button" data-student-id="${student.id}" data-status="${s.code}" class="status-btn px-2.5 py-1 rounded text-xs transition-colors ${btnClass}">${s.code}</button>`;
+          });
+
+          tr.innerHTML = `
+            <td class="py-3 px-4 font-mono text-slate-500">${index + 1}</td>
+            <td class="py-3 px-4">
+              <span class="block font-semibold text-white">${student.name}</span>
+              <span class="block text-[11px] font-mono text-slate-400">NISN: ${student.nisn}</span>
+            </td>
+            <td class="py-3 px-4 text-center">
+              <div class="inline-flex gap-1.5">${buttonsHtml}</div>
+            </td>
+          `;
+
+          studentTableBody.appendChild(tr);
+        });
+
+        // Attach click listener to status buttons
+        const statusButtons = studentTableBody.querySelectorAll('.status-btn');
+        statusButtons.forEach(btnEl => {
+          btnEl.addEventListener('click', function() {
+            const id = parseInt(this.getAttribute('data-student-id'), 10);
+            const newStatus = this.getAttribute('data-status');
+            const target = students.find(st => st.id === id);
+            if (target) {
+              target.status = newStatus;
+              renderStudents();
+            }
+          });
+        });
+      }
+
+      // Step 1 to Step 2
+      if (btnStep1Next) {
+        btnStep1Next.addEventListener('click', function() {
+          const unit = simUnit ? simUnit.value : 'SMP Budi Utomo';
+          const kelas = simKelas ? simKelas.value : 'Kelas VII-A';
+          const mapel = simMapel ? simMapel.value : 'Matematika';
+          const guru = simGuru ? simGuru.value : 'Drs. H. Mulyadi, M.Pd.';
+
+          if (sessionSummary) sessionSummary.textContent = `${unit} • ${kelas} • ${mapel}`;
+          if (teacherSummary) teacherSummary.textContent = guru;
+
+          renderStudents();
+
+          if (step1) step1.classList.add('hidden');
+          if (step2) step2.classList.remove('hidden');
+          setBadge(2);
+        });
+      }
+
+      // "Tandai Semua Hadir" button
+      if (btnAllPresent) {
+        btnAllPresent.addEventListener('click', function() {
+          students.forEach(st => st.status = 'H');
+          renderStudents();
+        });
+      }
+
+      // Step 2 to Step 1
+      if (btnStep2Prev) {
+        btnStep2Prev.addEventListener('click', function() {
+          if (step2) step2.classList.add('hidden');
+          if (step1) step1.classList.remove('hidden');
+          setBadge(1);
+        });
+      }
+
+      // Step 2 to Step 3 (Submit & Broadcast preview)
+      if (btnStep2Submit) {
+        btnStep2Submit.addEventListener('click', function() {
+          const materiVal = inputMateri ? inputMateri.value.trim() : '';
+          if (!materiVal) {
+            if (materiAlert) materiAlert.classList.remove('hidden');
+            if (inputMateri) inputMateri.focus();
+            return;
+          }
+          if (materiAlert) materiAlert.classList.add('hidden');
+
+          const unit = simUnit ? simUnit.value : 'SMP Budi Utomo';
+          const kelas = simKelas ? simKelas.value : 'Kelas VII-A';
+          const mapel = simMapel ? simMapel.value : 'Matematika';
+          const jam = simJam ? simJam.value : 'Jam ke 1 - 2';
+          const guru = simGuru ? simGuru.value : 'Drs. H. Mulyadi, M.Pd.';
+          const catatan = inputCatatan ? inputCatatan.value.trim() : '-';
+
+          const total = students.length;
+          const countH = students.filter(s => s.status === 'H').length;
+          const countS = students.filter(s => s.status === 'S').length;
+          const countI = students.filter(s => s.status === 'I').length;
+          const countA = students.filter(s => s.status === 'A').length;
+          const countT = students.filter(s => s.status === 'T').length;
+
+          const pctH = Math.round((countH / total) * 100);
+
+          let absenteesText = '';
+          const nonHadir = students.filter(s => s.status !== 'H');
+          if (nonHadir.length > 0) {
+            absenteesText = '\n*RINCIAN SISWA TIDAK HADIR:*\n';
+            nonHadir.forEach(s => {
+              const statusName = s.status === 'S' ? 'Sakit' : s.status === 'I' ? 'Izin' : s.status === 'A' ? 'Alpa' : 'Terlambat';
+              absenteesText += `• ${s.name} (${statusName})\n`;
+            });
+          }
+
+          const now = new Date();
+          const timeStr = `${String(now.getHours()).padStart(2, '0')}.${String(now.getMinutes()).padStart(2, '0')} WIB`;
+
+          if (waGroupName) waGroupName.textContent = `Wali Murid ${kelas}`;
+          if (waTimeStamp) waTimeStamp.textContent = `Hari ini, ${timeStr}`;
+
+          const msg = `📢 *LAPORAN PRESENSI KBM — ${unit.toUpperCase()}*\n━━━━━━━━━━━━━━━━━━━━\n📅 Tanggal : ${now.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}\n⏰ Jam KBM : ${jam}\n📚 Mapel   : ${mapel}\n👨‍🏫 Guru    : ${guru}\n🏫 Kelas   : ${kelas}\n\n📊 *REKAP KEHADIRAN (Total: ${total} Siswa):*\n✅ Hadir     : ${countH} siswa (${pctH}%)\n🤧 Sakit     : ${countS} siswa\n✉️ Izin      : ${countI} siswa\n❌ Alpa      : ${countA} siswa\n⏰ Terlambat : ${countT} siswa\n${absenteesText}\n📝 *JURNAL MATERI KBM:*\n"${materiVal}"\n\n📌 *Catatan Guru:*\n${catatan || '-'}\n\n━━━━━━━━━━━━━━━━━━━━\n_Laporan otomatis terverifikasi sistem Presensi Project_`;
+
+          if (waMessageContent) waMessageContent.textContent = msg;
+
+          if (step2) step2.classList.add('hidden');
+          if (step3) step3.classList.remove('hidden');
+          setBadge(3);
+        });
+      }
+
+      // Reset Simulator
+      if (btnSimReset) {
+        btnSimReset.addEventListener('click', function() {
+          students = [
+            { id: 1, name: 'Ahmad Fauzi', nisn: '00812341', status: 'H' },
+            { id: 2, name: 'Anisa Rahmawati', nisn: '00812342', status: 'H' },
+            { id: 3, name: 'Bagas Pratama', nisn: '00812343', status: 'S' },
+            { id: 4, name: 'Citra Kirana', nisn: '00812344', status: 'H' },
+            { id: 5, name: 'Dimas Wahyu', nisn: '00812345', status: 'H' }
+          ];
+          if (step3) step3.classList.add('hidden');
+          if (step1) step1.classList.remove('hidden');
+          setBadge(1);
+        });
+      }
+
     })();
   </script>
 
