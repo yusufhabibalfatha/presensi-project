@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Impeccable runtime / cache files (keep config, surfaces, critique, PRODUCT.md, DESIGN.md)
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/screenshots/
+.impeccable/cache/
