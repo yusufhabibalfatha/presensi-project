@@ -1,103 +1,357 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO On-Page Meta Data -->
-  <title>Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang | Presensi Project</title>
-  <meta name="description" content="Pelajari solusi konkret menghentikan fenomena siswa bolos di jam pelajaran ke-4 atau setelah istirahat dengan sistem presensi per jam pelajaran dan notifikasi WA otomatis.">
+  <title>Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang — Presensi Project</title>
+  <meta name="description" content="Pelajari solusi konkret menghentikan fenomena siswa bolos di jam pelajaran ke-4 atau setelah istirahat dengan sistem presensi per mapel dan notifikasi WA instan.">
+  <meta name="keywords" content="cara mencegah siswa bolos, absensi jam pelajaran siang, presensi per mapel, disiplin kbm sekolah, laporan absen whatsapp">
   <link rel="canonical" href="https://domainanda.com/blog/contoh-artikel/">
   
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://domainanda.com/blog/contoh-artikel/">
-  <meta property="og:title" content="Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang | Presensi Project">
-  <meta property="og:description" content="Mengapa absensi gerbang pagi saja tidak cukup? Temukan cara mendeteksi kehadiran siswa di setiap mata pelajaran.">
+  <meta property="og:title" content="Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang — Presensi Project">
+  <meta property="og:description" content="Mengapa absensi gerbang pagi saja tidak cukup? Temukan cara mendeteksi ketidakhadiran siswa di setiap pergantian mata pelajaran.">
   <meta property="og:image" content="https://domainanda.com/assets/og-image-artikel.jpg">
 
-  <!-- Schema.org JSON-LD Structured Data -->
+  <!-- Schema.org JSON-LD Structured Data (BlogPosting) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang",
+    "description": "Mengapa absensi gerbang pagi saja tidak cukup? Temukan cara mendeteksi ketidakhadiran siswa di setiap pergantian mata pelajaran.",
     "datePublished": "2026-11-12",
     "author": {
       "@type": "Organization",
-      "name": "Presensi Project"
+      "name": "Tim Litbang Presensi Project"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Presensi Project"
+      "name": "Presensi Project",
+      "url": "https://domainanda.com/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://domainanda.com/blog/contoh-artikel/"
     }
   }
   </script>
 
-  <!-- Stylesheet Tailwind CSS -->
+  <!-- Tailwind CSS Compiled Stylesheet -->
   <link rel="stylesheet" href="/dist/output.css">
-  <link rel="stylesheet" href="../../dist/output.css">
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-600 selection:text-white">
 
-  <!-- Bagian Header & Navigasi Utama -->
-  <header>
-    <nav aria-label="Navigasi Utama">
-      <a href="/">
-        <strong>Presensi Project</strong>
-      </a>
-      <ul>
-        <li><a href="/">Beranda</a></li>
-        <li><a href="/fitur/">Fitur</a></li>
-        <li><a href="/harga/">Harga</a></li>
-        <li><a href="/demo/">Demo</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/tentang-kami/">Tentang Kami</a></li>
-        <li><a href="/kontak/">Kontak</a></li>
-      </ul>
-      <div>
-        <a href="/demo/">Coba Demo Gratis</a>
-        <a href="/harga/">Beli Sekarang</a>
+  <!-- =========================================================================
+       HEADER & NAVIGATION (STANDARDIZED DESKTOP + MOBILE DRAWER)
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        
+        <!-- Brand Identity -->
+        <a href="/" class="flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 rounded-lg">
+          <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-700 text-white font-bold text-lg shadow-xs">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold tracking-tight text-slate-900 leading-tight">Presensi Project</span>
+            <span class="text-xs font-medium text-slate-500 leading-tight">Sistem Presensi Sekolah Terima Beres</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Navigasi Utama" class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition-colors">Beranda</a>
+          <a href="/fitur/" class="hover:text-slate-900 transition-colors">Fitur</a>
+          <a href="/harga/" class="hover:text-slate-900 transition-colors">Paket Harga</a>
+          <a href="/demo/" class="hover:text-slate-900 transition-colors">Demo</a>
+          <a href="/tentang-kami/" class="hover:text-slate-900 transition-colors">Tentang Kami</a>
+          <a href="/kontak/" class="hover:text-slate-900 transition-colors">Kontak</a>
+          <a href="/blog/" class="text-slate-900 font-semibold border-b-2 border-emerald-700 pb-1">Blog</a>
+        </nav>
+
+        <!-- Header CTA Action -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+            <span>Konsultasi WA</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" class="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700" aria-label="Buka Menu Navigasi">
+            <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-nav" aria-label="Navigasi Mobile" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-2 shadow-lg">
+      <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Beranda</a>
+      <a href="/fitur/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Fitur</a>
+      <a href="/harga/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Paket Harga</a>
+      <a href="/demo/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Demo Aplikasi</a>
+      <a href="/tentang-kami/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Tentang Kami</a>
+      <a href="/kontak/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Kontak</a>
+      <a href="/blog/" class="block px-3 py-2 rounded-md text-base font-semibold text-emerald-800 bg-emerald-50">Blog</a>
+      <div class="pt-3 border-t border-slate-100">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-base font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+          Hubungi Admin via WhatsApp
+        </a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <article>
-      <nav aria-label="Breadcrumb">
-        <a href="/">Beranda</a> &raquo; <a href="/blog/">Blog</a> &raquo; <span>Artikel</span>
-      </nav>
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content" class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl space-y-8">
       
-      <h1>Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang</h1>
-      <p><time datetime="2026-11-12">12 November 2026</time> &bull; Ditulis oleh Tim Edukasi Presensi Project</p>
+      <!-- Semantic Breadcrumbs -->
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs font-medium text-slate-500">
+        <a href="/" class="hover:text-slate-900 transition-colors">Beranda</a>
+        <span aria-hidden="true">&raquo;</span>
+        <a href="/blog/" class="hover:text-slate-900 transition-colors">Blog</a>
+        <span aria-hidden="true">&raquo;</span>
+        <span class="text-slate-800 font-semibold" aria-current="page">Kedisiplinan Siswa</span>
+      </nav>
 
-      <section>
-        <h2>Fenomena "Hadir Pagi, Hilang Siang"</h2>
-        <p>Banyak sekolah mengalami kendala di mana siswa hadir tepat waktu saat apel gerbang pagi atau absensi fingerprint masuk. Namun ketika jam pelajaran ke-4 atau setelah waktu istirahat siang, sebagian siswa tidak lagi berada di ruang kelas.</p>
+      <!-- Article Header -->
+      <header class="space-y-4 border-b border-slate-200 pb-8">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold bg-emerald-50 text-emerald-900">
+            Manajemen KBM &amp; Kedisiplinan
+          </span>
+          <time datetime="2026-11-12" class="text-xs font-medium text-slate-500">
+            12 November 2026
+          </time>
+          <span class="text-xs font-medium text-slate-400">&bull;</span>
+          <span class="text-xs font-medium text-slate-500">4 Menit Membaca</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight text-balance">
+          Cara Efektif Mencegah Siswa Bolos di Jam Pelajaran Siang
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-[50ch] text-pretty">
+          Mengapa absensi gerbang pagi saja tidak lagi memadai untuk menjaga ketertiban kelas? Simak strategi penerapan presensi per jam pelajaran terintegrasi WhatsApp.
+        </p>
+      </header>
+
+      <!-- Article Content Body -->
+      <article class="space-y-8 text-slate-700 leading-relaxed">
         
-        <h2>Mengapa Presensi Per Mata Pelajaran Jadi Kunci?</h2>
-        <p>Dengan melakukan pencatatan presensi di setiap pergantian jam pelajaran oleh guru pengampu langsung dari smartphone, wali kelas dan orang tua segera mengetahui status kehadiran anak pada jam tersebut. Informasi terkirim otomatis ke grup WhatsApp kelas tanpa menunggu rekap manual akhir bulan.</p>
-      </section>
+        <!-- Section: Fenomena Masalah -->
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-slate-900 text-balance">
+            Fenomena "Hadir Pagi, Hilang Siang"
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 max-w-[50ch] text-pretty">
+            Banyak sekolah mengalami kendala klasik: seluruh siswa tercatat hadir saat apel gerbang pagi atau absensi fingerprint masuk. Namun ketika jam pelajaran ke-4 atau setelah waktu istirahat siang, sebagian siswa tidak lagi berada di ruang kelas.
+          </p>
+          <p class="text-sm sm:text-base text-slate-600 max-w-[50ch] text-pretty">
+            Hal ini terjadi karena mesin fingerprint gerbang depan hanya mencatat waktu kedatangan fisik di gerbang sekolah, bukan kehadiran nyata saat proses kegiatan belajar mengajar (KBM) berlangsung di ruang kelas.
+          </p>
+        </section>
 
-      <div>
-        <a href="/blog/">&larr; Kembali ke Daftar Artikel</a>
-        <a href="/demo/">Coba Simulasi Presensi Per Mapel &rarr;</a>
-      </div>
-    </article>
+        <!-- Callout Box -->
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-6 space-y-2">
+          <h3 class="text-base font-bold text-emerald-950">
+            Fakta Lapangan Administrasi Sekolah:
+          </h3>
+          <p class="text-sm text-emerald-900 leading-relaxed max-w-[50ch] text-pretty">
+            Buku absen kertas yang diputar antar ruang guru sering kali tercecer atau baru direkapitulasi saat akhir semester, membuat wali kelas dan guru BK terlambat mendeteksi siswa yang membolos selektif pada mapel tertentu.
+          </p>
+        </div>
+
+        <!-- Section: Mengapa Presensi Per Mapel Jadi Solusi -->
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-slate-900 text-balance">
+            Mengapa Presensi Per Jam Pelajaran Menjadi Kunci?
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 max-w-[50ch] text-pretty">
+            Dengan melakukan pencatatan presensi di setiap pergantian jam pelajaran langsung oleh guru pengampu mata pelajaran, sistem dapat segera memetakan kehadiran murid secara presisi:
+          </p>
+
+          <ul class="space-y-3 text-sm sm:text-base text-slate-700">
+            <li class="flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+              </svg>
+              <span class="max-w-[48ch]"><strong>Deteksi Instan Siswa Meninggalkan Kelas:</strong> Guru jam siang langsung mengetahui jika seorang siswa tidak berada di bangkunya meski pagi tadi masuk sekolah.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+              </svg>
+              <span class="max-w-[48ch]"><strong>Notifikasi Otomatis ke Grup WhatsApp Kelas:</strong> Begitu guru menekan tombol simpan, ringkasan laporan otomatis terkirim ke wali murid secara transparan.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+              </svg>
+              <span class="max-w-[48ch]"><strong>Terhubung Jurnal Materi KBM:</strong> Guru diwajibkan menuliskan judul materi sebelum menyimpan, menjamin proses KBM berlangsung tertib dan tercatat resmi.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section: Langkah Implementasi Ringan -->
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-slate-900 text-balance">
+            Cara Mengimplementasikan Tanpa Membebani Guru
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 max-w-[50ch] text-pretty">
+            Kekhawatiran terbesar kepala sekolah biasanya adalah resistensi guru terhadap aplikasi baru yang rumit. Presensi Project mengatasi masalah ini dengan tombol aksi cepat <em>"Semua Hadir"</em> yang memungkinkan guru menyelesaikan absen 1 kelas dalam waktu kurang dari 30 detik.
+          </p>
+        </section>
+
+        <!-- Author / Editorial Box -->
+        <div class="rounded-xl border border-slate-200 bg-white p-6 sm:p-7 space-y-3 shadow-xs">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-700 text-white font-bold">
+              PP
+            </div>
+            <div>
+              <span class="block text-sm font-bold text-slate-900">Tim Litbang Presensi Project</span>
+              <span class="block text-xs text-slate-500">Divisi Riset &amp; Pengembangan Kurikulum Digital</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-[50ch] text-pretty">
+            Artikel ini disusun berdasarkan studi alur administrasi presensi pada sekolah mitra di jenjang SMP/MTs, SMA/MA, dan SMK di berbagai wilayah Indonesia.
+          </p>
+        </div>
+
+        <!-- Post Action & Navigation -->
+        <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <a href="/blog/" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-slate-900 transition-colors">
+            <span aria-hidden="true">&larr;</span>
+            <span>Kembali ke Daftar Blog Edukasi</span>
+          </a>
+          <a href="/demo/" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+            <span>Uji Coba Simulasi Demo Presensi</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
   </main>
 
-  <!-- Footer Utama -->
-  <footer>
-    <div>
-      <p>&copy; 2026 Presensi Project. Hak cipta dilindungi undang-undang.</p>
-      <nav aria-label="Navigasi Footer">
-        <a href="/">Beranda</a> | 
-        <a href="/fitur/">Fitur</a> | 
-        <a href="/harga/">Harga</a> | 
-        <a href="/kontak/">Kontak</a>
-      </nav>
+  <!-- =========================================================================
+       FOOTER (INSTITUTIONAL MULTI-COLUMN SEMANTIC)
+       ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 border-t border-slate-800 text-sm px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        
+        <!-- Kolom Brand & Ringkasan -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">Presensi Project</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm text-pretty">
+            Penyedia layanan <strong>jasa absen online</strong> dan sistem presensi sekolah terima beres. Membantu digitalisasi sekolah dan madrasah di seluruh Indonesia.
+          </p>
+          <div class="pt-2 text-xs text-slate-400">
+            Dikelola dengan server hosting privat terisolasi per institusi sekolah.
+          </div>
+        </div>
+
+        <!-- Kolom Navigasi Utama -->
+        <nav aria-label="Navigasi Footer" class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Halaman Utama</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Fitur Lengkap</a></li>
+            <li><a href="/harga/" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="/demo/" class="hover:text-white transition-colors">Demo Aplikasi</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Artikel &amp; Edukasi</a></li>
+          </ul>
+        </nav>
+
+        <!-- Kolom Modul & Layanan -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Modul Sistem</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Presensi Per Mapel</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Jurnal Mengajar Guru</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Notifikasi WhatsApp</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Rekapitulasi Otomatis</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Modul GPS Guru</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Kontak & Legal -->
+        <address class="space-y-3 not-italic">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Konsultasi &amp; Pengadaan</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/tentang-kami/" class="hover:text-white transition-colors">Tentang Kami</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Konsultasi Anggaran BOS</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Permintaan Invoice / SPJ</a></li>
+            <li class="pt-2 text-xs text-slate-400">
+              Jam Layanan: Senin – Jumat (08.00 – 17.00 WIB)
+            </li>
+          </ul>
+        </address>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 Presensi Project. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="flex items-center gap-6">
+          <a href="/kontak/" class="hover:text-white">Bantuan Onboarding</a>
+          <a href="/demo/" class="hover:text-white">Live Demo</a>
+          <a href="/" class="hover:text-white">Sitemap</a>
+        </div>
+      </div>
+
     </div>
   </footer>
+
+  <!-- =========================================================================
+       VANILLA JAVASCRIPT: ACCESSIBLE MOBILE DRAWER TOGGLE
+       ========================================================================= -->
+  <script>
+    (function() {
+      const btn = document.getElementById('mobile-menu-btn');
+      const nav = document.getElementById('mobile-nav');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (btn && nav) {
+        btn.addEventListener('click', function() {
+          const isOpen = nav.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', isOpen);
+          if (iconOpen && iconClose) {
+            iconOpen.classList.toggle('hidden', isOpen);
+            iconClose.classList.toggle('hidden', !isOpen);
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
