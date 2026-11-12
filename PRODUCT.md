@@ -31,7 +31,7 @@ Solusi terkelola privat (*Managed Private SaaS*) all-in-one untuk institusi pend
 
 ## Capabilities and Constraints
 
-- **Website Pemasaran Saat Ini:** Kumpulan halaman web statis HTML5 responsif dengan Tailwind CSS v4 ([beranda.html](file:///Users/yusufhabib/Documents/learn/website_statis/beranda.html), [fitur.html](file:///Users/yusufhabib/Documents/learn/website_statis/fitur.html), [harga.html](file:///Users/yusufhabib/Documents/learn/website_statis/harga.html), [demo.html](file:///Users/yusufhabib/Documents/learn/website_statis/demo.html), [tentang-kami.html](file:///Users/yusufhabib/Documents/learn/website_statis/tentang-kami.html), [kontak.html](file:///Users/yusufhabib/Documents/learn/website_statis/kontak.html)).
+- **Website Pemasaran Saat Ini:** Kumpulan halaman web statis HTML5 responsif dengan Tailwind CSS v4 ([index.html](file:///Users/yusufhabib/Documents/learn/website_statis/index.html), [fitur/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/fitur/index.html), [harga/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/harga/index.html), [demo/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/demo/index.html), [tentang-kami/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/tentang-kami/index.html), [kontak/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/kontak/index.html), [blog/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/blog/index.html)).
 - **Aplikasi Frontend Produk:** Vue 3 Composition API, Vite, mobile-first touch-friendly design.
 - **Backend & Database Produk:** CodeIgniter 4 (PHP 8+), MySQL/MariaDB terisolasi per sekolah, integrasi Fonnte WhatsApp Gateway API.
 - **Model Distribusi:** Bukan penjualan lisensi source code terbuka; sistem terima beres dengan server dan domain khusus sekolah.
@@ -44,7 +44,7 @@ Solusi terkelola privat (*Managed Private SaaS*) all-in-one untuk institusi pend
 ## Evidence on Hand
 
 - Dokumen spesifikasi teknis dan fitur riil: [PROFIL_DAN_FAKTA_APLIKASI.md](file:///Users/yusufhabib/Documents/learn/website_statis/PROFIL_DAN_FAKTA_APLIKASI.md).
-- Halaman konten yang sudah ada di repositori: [beranda.html](file:///Users/yusufhabib/Documents/learn/website_statis/beranda.html), [fitur.html](file:///Users/yusufhabib/Documents/learn/website_statis/fitur.html), [harga.html](file:///Users/yusufhabib/Documents/learn/website_statis/harga.html), [demo.html](file:///Users/yusufhabib/Documents/learn/website_statis/demo.html), [kontak.html](file:///Users/yusufhabib/Documents/learn/website_statis/kontak.html), [tentang-kami.html](file:///Users/yusufhabib/Documents/learn/website_statis/tentang-kami.html).
+- Halaman konten yang sudah ada di repositori: [index.html](file:///Users/yusufhabib/Documents/learn/website_statis/index.html), [fitur/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/fitur/index.html), [harga/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/harga/index.html), [demo/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/demo/index.html), [kontak/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/kontak/index.html), [tentang-kami/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/tentang-kami/index.html), [blog/index.html](file:///Users/yusufhabib/Documents/learn/website_statis/blog/index.html).
 - Komitmen keaslian data: Tidak menampilkan testimoni fiktif atau angka metrik palsu.
 
 ## Product Principles
