@@ -1,0 +1,8 @@
+# robots.txt for Presensi Project (https://presensiproject.com)
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /src/
+
+# Sitemap location
+Sitemap: https://presensiproject.com/sitemap.xml
