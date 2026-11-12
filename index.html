@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="h-full bg-slate-50">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO On-Page Meta Data -->
-  <title>Aplikasi Absen Siswa Online &amp; Web Presensi Kelas Per Mapel</title>
+  <title>Aplikasi Absen Siswa Online &amp; Web Presensi Kelas Per Mapel | Presensi Project</title>
   <meta name="description" content="Aplikasi presensi siswa berbasis web untuk absen kelas per mata pelajaran. Terima beres sudah termasuk domain, hosting, dan gratis input data master siswa!">
   <meta name="keywords" content="aplikasi absen siswa, absen siswa online, absen kelas, buku absen siswa, absen siswa, rekapitulasi absen siswa, absen digital siswa, aplikasi presensi siswa, aplikasi absen sekolah online, aplikasi presensi sekolah, presensi digital sekolah">
   <link rel="canonical" href="https://domainanda.com/">
@@ -13,7 +13,7 @@
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domainanda.com/">
-  <meta property="og:title" content="Aplikasi Absen Siswa Online &amp; Web Presensi Kelas Per Mapel">
+  <meta property="og:title" content="Aplikasi Absen Siswa Online &amp; Web Presensi Kelas Per Mapel | Presensi Project">
   <meta property="og:description" content="Aplikasi presensi siswa per mata pelajaran dengan integrasi otomatis WhatsApp grup kelas. Paket terima beres include hosting dan domain.">
   <meta property="og:image" content="https://domainanda.com/assets/og-image.jpg">
 
@@ -22,7 +22,7 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Sistem Presensi Siswa & Jurnal Mengajar Digital",
+    "name": "Presensi Project - Sistem Presensi Siswa & Jurnal Mengajar Digital",
     "operatingSystem": "Web Browser (Mobile, Tablet, Desktop)",
     "applicationCategory": "EducationalApplication",
     "description": "Aplikasi presensi siswa online berbasis web untuk pencatatan absen kelas per mata pelajaran terintegrasi WhatsApp Gateway.",
@@ -38,286 +38,790 @@
   <link rel="stylesheet" href="/dist/output.css">
   <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
+<body class="min-h-full flex flex-col font-sans text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
 
-  <!-- Bagian Header & Navigasi Utama -->
-  <header>
-    <nav aria-label="Navigasi Utama">
-      <a href="/">
-        <strong>ABSI Presensi Sekolah</strong>
-      </a>
-      <ul>
-        <li><a href="/">Beranda</a></li>
-        <li><a href="/fitur/">Fitur</a></li>
-        <li><a href="/harga/">Harga</a></li>
-        <li><a href="/demo/">Demo</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/tentang-kami/">Tentang Kami</a></li>
-        <li><a href="/kontak/">Hubungi Kami</a></li>
-      </ul>
+  <!-- =========================================================================
+       HEADER & NAVIGATION BAR (INSTITUTIONAL COMMAND STYLE)
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-18 items-center justify-between">
+        
+        <!-- Logo & Brand Identity -->
+        <a href="/" class="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 rounded-lg p-1">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-900 text-white shadow-sm ring-1 ring-slate-800">
+            <!-- Icon School Shield / Academic -->
+            <svg class="h-5 w-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div>
+            <span class="block text-base font-bold tracking-tight text-slate-900 group-hover:text-emerald-800 transition-colors">Presensi Project</span>
+            <span class="block text-xs font-medium text-slate-600 tracking-wide">Sistem Presensi Mapel &amp; Jurnal Digital</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Navigasi Utama" class="hidden md:flex items-center gap-1 lg:gap-2">
+          <a href="/" class="px-3.5 py-2 text-sm font-semibold text-slate-900 bg-slate-100 rounded-md transition-colors" aria-current="page">Beranda</a>
+          <a href="/fitur/" class="px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors">Fitur</a>
+          <a href="/harga/" class="px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors">Harga</a>
+          <a href="/demo/" class="px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors">Demo</a>
+          <a href="/blog/" class="px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors">Blog</a>
+          <a href="/tentang-kami/" class="px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors">Tentang Kami</a>
+          <a href="/kontak/" class="px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors">Kontak</a>
+        </nav>
+
+        <!-- Desktop Action Buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="/demo/" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50 hover:border-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
+            Coba Demo
+          </a>
+          <a href="/harga/" class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
+            Lihat Paket Sekolah
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center rounded-lg p-2 text-slate-700 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900" aria-controls="mobile-nav" aria-expanded="false" aria-label="Buka menu navigasi">
+            <svg id="menu-icon-open" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <nav id="mobile-nav" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-1 shadow-lg" aria-label="Navigasi Mobile">
+      <a href="/" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-900 bg-slate-100" aria-current="page">Beranda</a>
+      <a href="/fitur/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">Fitur</a>
+      <a href="/harga/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">Harga</a>
+      <a href="/demo/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">Demo</a>
+      <a href="/blog/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">Blog</a>
+      <a href="/tentang-kami/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">Tentang Kami</a>
+      <a href="/kontak/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">Kontak</a>
+      <div class="pt-4 flex flex-col gap-2">
+        <a href="/demo/" class="w-full text-center py-2.5 px-4 rounded-lg border border-slate-300 font-semibold text-slate-800 hover:bg-slate-50">Coba Demo Gratis</a>
+        <a href="/harga/" class="w-full text-center py-2.5 px-4 rounded-lg bg-slate-900 text-white font-semibold shadow hover:bg-slate-800">Lihat Paket Sekolah</a>
+      </div>
     </nav>
   </header>
 
-  <!-- Konten Utama Halaman -->
-  <main>
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main class="flex-grow">
 
-    <!-- SECTION 1: HERO SECTION -->
-    <section id="hero" aria-labelledby="hero-heading">
-      <header>
-        <p><strong>Solusi Presensi Digital Sekolah Terima Beres #1 di Indonesia</strong></p>
-        <h1 id="hero-heading">
-          Aplikasi Absen Siswa Online Per Mata Pelajaran — Tanpa Ribet, Langsung Pakai!
-        </h1>
-      </header>
-      
-      <p>
-        Tinggalkan buku absen kertas yang rawan hilang dan rekap manual yang menyita waktu. Pantau <strong>absen kelas</strong> setiap pergantian jam pelajaran secara real-time langsung dari HP guru, otomatis terhubung ke WhatsApp grup kelas. Harga sudah 1 paket termasuk Domain, Server Hosting, Instalasi Awal, dan <strong>GRATIS Bantuan Input Data Master Siswa &amp; Guru!</strong>
-      </p>
+    <!-- -----------------------------------------------------------------------
+         SECTION 1: HERO SECTION (SPLIT 60/40 COMMAND CENTER)
+         ----------------------------------------------------------------------- -->
+    <section id="hero" class="pt-12 pb-16 lg:pt-20 lg:pb-24 px-4 sm:px-6 lg:px-8 border-b border-slate-200 bg-white" aria-labelledby="hero-heading">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          
+          <!-- Sisi Kiri: Pesan Bernilai Tinggi untuk Pimpinan Yayasan (60%) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Status Badge Header (Honest Static Indicator) -->
+            <div class="inline-flex items-center gap-2 rounded-md bg-slate-100 p-2 text-xs font-semibold text-slate-800 border border-slate-200">
+              <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
+              <span>Sistem Presensi Sekolah Terima Beres &bull; Kuota Tanpa Batas</span>
+            </div>
 
-      <div>
-        <a href="/kontak/">Konsultasi &amp; Coba Demo Gratis</a>
-        <a href="/harga/">Lihat Paket Harga Terima Beres</a>
+            <!-- Headline Utama -->
+            <h1 id="hero-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15] text-balance">
+              Aplikasi Absen Siswa Online Per Mata Pelajaran — Tanpa Ribet, Langsung Pakai!
+            </h1>
+
+            <!-- Paragraf Penjelas (Measure 65ch) -->
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-[65ch] text-pretty">
+              Tinggalkan buku absen kertas yang rawan hilang dan rekap manual yang menyita waktu. Pantau <strong>absen kelas</strong> setiap pergantian jam pelajaran secara real-time langsung dari HP guru, otomatis terhubung ke WhatsApp grup kelas. Harga sudah 1 paket termasuk Domain, Server Hosting, Instalasi Awal, dan <strong>GRATIS Bantuan Input Data Master Siswa &amp; Guru!</strong>
+            </p>
+
+            <!-- Tombol Aksi Utama (Dual CTA) -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="/kontak/" class="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-900 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-all">
+                <span>Konsultasi &amp; Coba Demo Gratis</span>
+                <svg class="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+              </a>
+              <a href="/harga/" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-800 hover:bg-slate-50 hover:border-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 transition-colors">
+                Lihat Paket Harga Terima Beres
+              </a>
+            </div>
+
+            <!-- Checklist Keunggulan Cepat (Separated with clean hr) -->
+            <hr class="border-slate-200 my-6">
+
+            <ul aria-label="Keunggulan Utama Layanan" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <li class="flex items-start gap-2.5 text-sm text-slate-700">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                </svg>
+                <span>100% Berbasis Web (Tanpa Unduh Aplikasi)</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-700">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                </svg>
+                <span>Otomatis Kirim Rekap ke WhatsApp Grup Kelas</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-700">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                </svg>
+                <span>Gratis Input Data Siswa, Kelas &amp; Jadwal</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-700">
+                <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                </svg>
+                <span>Server Privat &amp; Domain Mandiri Terpasang</span>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Sisi Kanan: Mockup Visual "Command Center Sesi KBM" (Flattened Hierarchy) -->
+          <div class="lg:col-span-5">
+            <div class="rounded-xl bg-slate-900 text-white shadow-xl ring-1 ring-slate-800 p-6 space-y-4">
+              
+              <!-- Window Header -->
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
+                <div class="flex items-center gap-2">
+                  <span class="h-3 w-3 rounded-full bg-slate-700 inline-block"></span>
+                  <span class="h-3 w-3 rounded-full bg-slate-700 inline-block"></span>
+                  <span class="h-3 w-3 rounded-full bg-slate-700 inline-block"></span>
+                  <span class="ml-2 font-mono text-slate-300">presensi.sekolah.sch.id</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-emerald-400 font-medium">
+                  <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                  <span>Sesi Aktif</span>
+                </div>
+              </div>
+
+              <!-- Info Sesi Mengajar Saat Ini -->
+              <div class="border-b border-slate-800 pb-3 space-y-1">
+                <div class="flex items-center justify-between text-xs text-slate-300">
+                  <span>Tahun Ajaran 2026/2027 &bull; Semester Genap</span>
+                  <span class="font-mono text-slate-200">10:15 - 11:30 WIB</span>
+                </div>
+                <div class="text-base font-bold text-white flex items-center justify-between">
+                  <span>Kelas 8A &bull; Matematika</span>
+                  <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-900/80 text-emerald-200 border border-emerald-700">Jam Ke-4</span>
+                </div>
+                <div class="text-xs text-slate-300 flex items-center gap-1.5 pt-0.5">
+                  <svg class="h-3.5 w-3.5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z"/>
+                  </svg>
+                  <span>Guru Pengampu: <strong class="text-white">Dra. Siti Rahmawati</strong></span>
+                </div>
+              </div>
+
+              <!-- Daftar Status Siswa (Tabular List) -->
+              <div class="space-y-2 border-b border-slate-800 pb-4">
+                <div class="flex items-center justify-between text-xs text-slate-300 font-semibold px-0.5">
+                  <span>Daftar Siswa (32 Siswa)</span>
+                  <span class="text-emerald-300">Tandai Semua Hadir</span>
+                </div>
+
+                <div class="divide-y divide-slate-800 text-xs">
+                  <div class="flex items-center justify-between py-2">
+                    <div class="flex items-center gap-2">
+                      <span class="w-5 text-center font-mono text-slate-400">01</span>
+                      <span class="font-medium text-slate-100">Ahmad Fauzan</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-xs font-semibold bg-emerald-950 text-emerald-200 border border-emerald-700">Hadir</span>
+                  </div>
+
+                  <div class="flex items-center justify-between py-2">
+                    <div class="flex items-center gap-2">
+                      <span class="w-5 text-center font-mono text-slate-400">02</span>
+                      <span class="font-medium text-slate-100">Budi Santoso</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-xs font-semibold bg-sky-950 text-sky-200 border border-sky-700">Izin (OSIS)</span>
+                  </div>
+
+                  <div class="flex items-center justify-between py-2">
+                    <div class="flex items-center gap-2">
+                      <span class="w-5 text-center font-mono text-slate-400">03</span>
+                      <span class="font-medium text-slate-100">Dimas Pratama</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-xs font-semibold bg-rose-950 text-rose-200 border border-rose-700">Alpa (Jam Siang)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jurnal Mengajar Materi (Flat border-left highlight) -->
+              <div class="space-y-1.5 text-xs border-b border-slate-800 pb-4">
+                <div class="flex items-center justify-between text-slate-300">
+                  <span class="font-semibold text-slate-200">Jurnal Mengajar Guru (Wajib Diisi):</span>
+                  <span class="text-emerald-400 font-medium">&check; Valid</span>
+                </div>
+                <div class="border-l-2 border-emerald-500 pl-3 py-1 font-mono text-slate-200 text-xs">
+                  Bab 6: Teorema Pythagoras (Latihan Soal Hal. 42)
+                </div>
+              </div>
+
+              <!-- Status WhatsApp Gateway -->
+              <div class="pt-1 flex items-center justify-between text-xs">
+                <div class="flex items-center gap-2">
+                  <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                  <span class="text-slate-200 font-medium">WhatsApp Gateway: Laporan Terkirim</span>
+                </div>
+                <span class="font-mono text-slate-300">Grup WA Kelas 8A (10:18)</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </div>
-
-      <!-- Checklist Keunggulan Cepat -->
-      <ul aria-label="Keunggulan Utama Layanan">
-        <li>100% Berbasis Web (Tanpa Perlu Download Aplikasi di HP)</li>
-        <li>Otomatis Kirim Rekap Kehadiran ke WhatsApp Grup Kelas</li>
-        <li>Gratis Bantuan Input Data Master Siswa, Kelas &amp; Jadwal Awal</li>
-        <li>Server Hosting &amp; Domain Sudah Kami Siapkan Lengkap</li>
-      </ul>
     </section>
 
-    <!-- SECTION 2: MASALAH UMUM SEKOLAH (PAIN POINTS) -->
-    <section id="masalah" aria-labelledby="masalah-heading">
-      <header>
-        <h2 id="masalah-heading">Mengapa Buku Absen Siswa Manual Tidak Lagi Efektif?</h2>
-        <p>
-          Di banyak sekolah, pencatatan kehadiran masih mengandalkan lembaran <strong>buku absen siswa</strong> fisik yang dibawa berkeliling dari satu ruang kelas ke kelas lain. Akibatnya sering memicu berbagai kendala serius:
-        </p>
-      </header>
-
-      <article>
-        <h3>Buku Absen Kelas Sering Hilang atau Terselip</h3>
-        <p>
-          Buku absen kertas rentan tercecer, robek, atau tertinggal di meja ruang guru. Guru mata pelajaran berikutnya kesulitan mengecek siapa siswa yang tidak masuk atau membolos di jam pelajaran kedua dan ketiga.
-        </p>
-      </article>
-
-      <article>
-        <h3>Siswa Bolos di Jam Pelajaran Tertentu Lolos Pengawasan</h3>
-        <p>
-          Siswa tercatat hadir saat apel pagi gerbang, namun menghilang saat pergantian mata pelajaran jam ke-4 atau setelah istirahat tanpa terdeteksi oleh wali kelas dan pihak Guru BK.
-        </p>
-      </article>
-
-      <article>
-        <h3>Rekapitulasi Absen Siswa Akhir Bulan Menguras Waktu</h3>
-        <p>
-          Wali kelas dan staf Tata Usaha (TU) harus menghitung ulang ribuan data Hadir, Terlambat, Sakit, Izin, dan Alpa secara manual di Excel setiap akhir semester dan jelang pembagian rapor.
-        </p>
-      </article>
-    </section>
-
-    <!-- SECTION 3: SOLUSI & VALUE PROPOSITION (TERIMA BERES) -->
-    <section id="solusi" aria-labelledby="solusi-heading">
-      <header>
-        <h2 id="solusi-heading">Lebih dari Sekadar Aplikasi Presensi Sekolah Biasa — Kami Siapkan Semuanya dari Nol!</h2>
-        <p>
-          Kami paham Operator Sekolah dan Bapak/Ibu Guru sudah sangat sibuk dengan urusan administrasi KBM. Karena itu, layanan <strong>aplikasi absen sekolah online</strong> kami hadir dengan konsep <strong>Terima Beres</strong>:
-        </p>
-      </header>
-
-      <article>
-        <h3>1. Sudah Termasuk Domain &amp; Server Cloud Hosting Cepat</h3>
-        <p>
-          Sekolah tidak perlu pusing menyewa server sendiri atau mengatur instalasi deployment yang rumit. Kami sediakan akses web yang stabil, aman, dan siap diakses puluhan guru secara bersamaan dengan domain khusus sekolah Anda (misal: <em>absen.namasekolah.sch.id</em>). Data siswa tersimpan aman di server privat sekolah.
-        </p>
-      </article>
-
-      <article>
-        <h3>2. Gratis Bantuan Input Data Master Awal</h3>
-        <p>
-          Cukup kirimkan file Excel daftar nama siswa, pembagian rombel/kelas, dan daftar guru mata pelajaran Anda. Tim teknis kami yang akan menginput seluruh data master awal sampai sistem 100% siap digunakan.
-        </p>
-      </article>
-
-      <article>
-        <h3>3. Desain Ringan &amp; Mudah Dipahami Guru Senior</h3>
-        <p>
-          Tampilan <strong>absen digital siswa</strong> dirancang ramah layar sentuh HP (mobile-first), font jelas, tombol jempol besar, dan anti-lag. Cukup buka browser HP, pilih kelas dan mata pelajaran, lalu klik status kehadiran dalam hitungan detik tanpa hambatan lupa kata sandi.
-        </p>
-      </article>
-    </section>
-
-    <!-- SECTION 4: CUPLIKAN FITUR INTI (FEATURE HIGHLIGHTS) -->
-    <section id="fitur" aria-labelledby="fitur-heading">
-      <header>
-        <h2 id="fitur-heading">Fitur Unggulan Aplikasi Presensi Siswa Berbasis Web</h2>
-        <p>
-          Dirancang berdasarkan alur kerja nyata di lingkungan sekolah untuk mempermudah guru dan meningkatkan akuntabilitas KBM.
-        </p>
-      </header>
-
-      <dl>
-        <dt><strong>Presensi Khusus Guru Mata Pelajaran (Absen Siswa Per Jam)</strong></dt>
-        <dd>
-          Setiap guru pengampu dapat mengabsen kelas sesuai jadwal mengajarnya melalui alur 4 langkah praktis: Pilih Kelas ➔ Pilih Mapel ➔ Pilih Jam Pelajaran ➔ Pilih Guru Pengampu.
-        </dd>
-
-        <dt><strong>Tombol 1-Klik "Tandai Semua Hadir"</strong></dt>
-        <dd>
-          Menghemat waktu guru saat mengabsen 30–40 siswa. Cukup tekan 1 tombol untuk menandai semua siswa hadir, lalu sesuaikan hanya siswa yang sakit, izin, atau alpa.
-        </dd>
-
-        <dt><strong>Otomatis Kirim Ringkasan ke WhatsApp Grup Kelas</strong></dt>
-        <dd>
-          Sekali klik tombol simpan, sistem secara instan mengirimkan laporan presensi ber-emoji ke WhatsApp Grup Kelas berisi rincian siswa hadir, izin, sakit, alpa, serta materi pelajaran yang diajarkan.
-        </dd>
-
-        <dt><strong>Jurnal Mengajar Terintegrasi (Wajib Isi Materi)</strong></dt>
-        <dd>
-          Catat materi pelajaran dan kejadian penting di kelas bersamaan saat melakukan presensi. Guru wajib mengisi materi KBM sebelum data tersimpan untuk memudahkan supervisi kurikulum.
-        </dd>
-
-        <dt><strong>Rekapitulasi Absen Siswa &amp; Persentase Otomatis</strong></dt>
-        <dd>
-          Tidak perlu rumus Excel rumit. Sistem secara otomatis menghitung riwayat jurnal harian dan akumulasi persentase kehadiran siswa per kelas per periode kalender akademik.
-        </dd>
-      </dl>
-
-      <p>
-        <a href="/fitur/">Lihat Detail Seluruh Fitur Aplikasi Absen Siswa &amp; Jurnal Digital &rarr;</a>
-      </p>
-    </section>
-
-    <!-- SECTION 5: CARA KERJA PEMESANAN (HOW IT WORKS) -->
-    <section id="cara-kerja" aria-labelledby="cara-kerja-heading">
-      <header>
-        <h2 id="cara-kerja-heading">3 Langkah Mudah Memulai Absen Kelas Online di Sekolah Anda</h2>
-        <p>
-          Tanpa perlu mengerti bahasa pemrograman atau repot menyewa server sendiri.
-        </p>
-      </header>
-
-      <ol>
-        <li>
-          <h3>Kirim Data Sekolah</h3>
-          <p>
-            Hubungi kami dan kirimkan data siswa, rombel kelas, serta daftar mata pelajaran dalam format Excel yang biasa dimiliki sekolah.
+    <!-- -----------------------------------------------------------------------
+         SECTION 2: MASALAH UMUM SEKOLAH (PAIN POINTS)
+         ----------------------------------------------------------------------- -->
+    <section id="masalah" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200" aria-labelledby="masalah-heading">
+      <div class="mx-auto max-w-7xl">
+        
+        <div class="max-w-3xl">
+          <h2 id="masalah-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Mengapa Buku Absen Siswa Manual Tidak Lagi Efektif?
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[65ch] text-pretty">
+            Di banyak sekolah, pencatatan kehadiran masih mengandalkan lembaran <strong>buku absen siswa</strong> fisik yang dibawa berkeliling dari satu ruang kelas ke kelas lain. Akibatnya sering memicu berbagai kendala serius:
           </p>
-        </li>
-        <li>
-          <h3>Proses Setup &amp; Input Data oleh Tim Kami</h3>
-          <p>
-            Kami siapkan domain, server cloud hosting privat, instalasi database, pengaturan WhatsApp gateway, hingga input seluruh data master awal Anda (Proses cepat 1–2 hari kerja).
-          </p>
-        </li>
-        <li>
-          <h3>Sistem Siap Digunakan Guru</h3>
-          <p>
-            Kami berikan tautan web sekolah dan panduan singkat. Guru mata pelajaran bisa langsung melakukan <strong>absen siswa online</strong> saat mengajar keesokan harinya!
-          </p>
-        </li>
-      </ol>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Masalah 1: Side-by-side heading icon (no icon-tile-stack) -->
+          <article class="rounded-xl border border-slate-200 bg-white p-6 sm:p-7 hover:border-slate-300 transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-slate-900 leading-snug flex items-center gap-2.5 text-balance">
+                <svg class="h-5 w-5 text-amber-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <path d="M14 2v6h6M9 15h6M9 11h2"/>
+                </svg>
+                <span>Buku Absen Sering Hilang atau Terselip</span>
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed text-pretty">
+                Buku absen kertas rentan tercecer, robek, atau tertinggal di meja ruang guru. Guru mata pelajaran berikutnya kesulitan mengecek siapa siswa yang tidak masuk atau membolos di jam pelajaran kedua dan ketiga.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 text-xs font-semibold text-rose-800">
+              Dampak: Administrasi KBM tidak akuntabel
+            </div>
+          </article>
+
+          <!-- Masalah 2: Side-by-side heading icon -->
+          <article class="rounded-xl border border-slate-200 bg-white p-6 sm:p-7 hover:border-slate-300 transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-slate-900 leading-snug flex items-center gap-2.5 text-balance">
+                <svg class="h-5 w-5 text-rose-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <line x1="19" y1="8" x2="19" y2="14"/>
+                  <line x1="22" y1="11" x2="16" y2="11"/>
+                </svg>
+                <span>Siswa Bolos di Jam Siang Lolos Pantauan</span>
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed text-pretty">
+                Siswa tercatat hadir saat apel pagi gerbang, namun menghilang saat pergantian mata pelajaran jam ke-4 atau setelah istirahat tanpa terdeteksi oleh wali kelas dan pihak Guru BK.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 text-xs font-semibold text-rose-800">
+              Dampak: Keluhan wali murid saat rapat evaluasi
+            </div>
+          </article>
+
+          <!-- Masalah 3: Side-by-side heading icon -->
+          <article class="rounded-xl border border-slate-200 bg-white p-6 sm:p-7 hover:border-slate-300 transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-slate-900 leading-snug flex items-center gap-2.5 text-balance">
+                <svg class="h-5 w-5 text-slate-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Rekapitulasi Absen Manual Menguras Waktu</span>
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed text-pretty">
+                Wali kelas dan staf Tata Usaha (TU) harus menghitung ulang ribuan data Hadir, Terlambat, Sakit, Izin, dan Alpa secara manual di Excel setiap akhir semester dan jelang pembagian rapor.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 text-xs font-semibold text-rose-800">
+              Dampak: Puluhan jam kerja staf terbuang sia-sia
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <!-- SECTION 6: TEASER PRODUK EKOSISTEM (CROSS-SELLING) -->
-    <aside id="ekosistem" aria-labelledby="ekosistem-heading">
-      <h3 id="ekosistem-heading">Butuh Sistem Pemantauan Kehadiran Guru &amp; Staf Berbasis GPS?</h3>
-      <p>
-        Selain fokus pada sistem <strong>absen digital siswa</strong> per mata pelajaran, kami juga menyediakan modul terpisah untuk <strong>Absen Guru Online Berbasis Titik GPS Lokasi Sekolah</strong> (radius terverifikasi menggunakan formula Haversine) lengkap dengan laporan jurnal kehadiran dan notifikasi WhatsApp ke Kepala Sekolah.
-      </p>
-      <p>
-        <a href="/kontak/">Tanyakan Paket Bundling Absen Mapel Siswa + Absen GPS Guru kepada Tim Kami &rarr;</a>
-      </p>
+    <!-- -----------------------------------------------------------------------
+         SECTION 3: SOLUSI & VALUE PROPOSITION (TERIMA BERES)
+         ----------------------------------------------------------------------- -->
+    <section id="solusi" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200" aria-labelledby="solusi-heading">
+      <div class="mx-auto max-w-7xl">
+        
+        <div class="max-w-3xl">
+          <h2 id="solusi-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Lebih dari Sekadar Aplikasi Presensi Sekolah Biasa — Kami Siapkan Semuanya dari Nol!
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[65ch] text-pretty">
+            Kami paham Operator Sekolah dan Bapak/Ibu Guru sudah sangat sibuk dengan urusan administrasi KBM. Karena itu, layanan <strong>aplikasi absen sekolah online</strong> kami hadir dengan konsep <strong>Terima Beres</strong>:
+          </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Pilar 1 -->
+          <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-7">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-900 text-white font-bold text-sm">1</span>
+              <h3 class="text-lg font-bold text-slate-900 text-balance">Domain &amp; Server Privat Cepat</h3>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed text-pretty">
+              Sekolah tidak perlu pusing menyewa server sendiri atau mengatur instalasi deployment yang rumit. Kami sediakan akses web yang stabil, aman, dan siap diakses puluhan guru secara bersamaan dengan domain khusus sekolah Anda (misal: <em>absen.namasekolah.sch.id</em>). Data siswa tersimpan aman di server privat sekolah.
+            </p>
+          </article>
+
+          <!-- Pilar 2 -->
+          <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-7">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-900 text-white font-bold text-sm">2</span>
+              <h3 class="text-lg font-bold text-slate-900 text-balance">Gratis Input Data Master Awal</h3>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed text-pretty">
+              Cukup kirimkan file Excel daftar nama siswa, pembagian rombel/kelas, dan daftar guru mata pelajaran Anda. Tim teknis kami yang akan menginput seluruh data master awal sampai sistem 100% siap digunakan.
+            </p>
+          </article>
+
+          <!-- Pilar 3 -->
+          <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-7">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-900 text-white font-bold text-sm">3</span>
+              <h3 class="text-lg font-bold text-slate-900 text-balance">Ramah Guru Senior (Anti-Lag)</h3>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed text-pretty">
+              Tampilan <strong>absen digital siswa</strong> dirancang ramah layar sentuh HP (mobile-first), font jelas, tombol jempol besar, dan anti-lag. Cukup buka browser HP, pilih kelas dan mata pelajaran, lalu klik status kehadiran dalam hitungan detik tanpa hambatan lupa kata sandi.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 4: CUPLIKAN FITUR INTI (FEATURE HIGHLIGHTS)
+         ----------------------------------------------------------------------- -->
+    <section id="fitur" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200" aria-labelledby="fitur-heading">
+      <div class="mx-auto max-w-7xl">
+        
+        <div class="max-w-3xl">
+          <h2 id="fitur-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Fitur Unggulan Aplikasi Presensi Siswa Berbasis Web
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[65ch] text-pretty">
+            Dirancang berdasarkan alur kerja nyata di lingkungan sekolah untuk mempermudah guru dan meningkatkan akuntabilitas KBM.
+          </p>
+        </div>
+
+        <dl class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="rounded-xl border border-slate-200 bg-white p-6 space-y-2.5">
+            <dt class="font-bold text-slate-900 text-base flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 14 14"/>
+              </svg>
+              <span>Presensi Guru Per Mapel &amp; Jam</span>
+            </dt>
+            <dd class="text-sm text-slate-600 leading-relaxed pl-7.5 text-pretty">
+              Setiap guru pengampu dapat mengabsen kelas sesuai jadwal mengajarnya melalui alur 4 langkah praktis: Pilih Kelas ➔ Pilih Mapel ➔ Pilih Jam Pelajaran ➔ Pilih Guru Pengampu.
+            </dd>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 space-y-2.5">
+            <dt class="font-bold text-slate-900 text-base flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span>Tombol 1-Klik "Tandai Semua Hadir"</span>
+            </dt>
+            <dd class="text-sm text-slate-600 leading-relaxed pl-7.5 text-pretty">
+              Menghemat waktu guru saat mengabsen 30–40 siswa. Cukup tekan 1 tombol untuk menandai semua siswa hadir, lalu sesuaikan hanya siswa yang sakit, izin, atau alpa.
+            </dd>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 space-y-2.5">
+            <dt class="font-bold text-slate-900 text-base flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              <span>Otomatis Kirim ke WA Grup Kelas</span>
+            </dt>
+            <dd class="text-sm text-slate-600 leading-relaxed pl-7.5 text-pretty">
+              Sekali klik tombol simpan, sistem secara instan mengirimkan laporan presensi ber-emoji ke WhatsApp Grup Kelas berisi rincian siswa hadir, izin, sakit, alpa, serta materi pelajaran yang diajarkan.
+            </dd>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 space-y-2.5">
+            <dt class="font-bold text-slate-900 text-base flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+              <span>Jurnal Mengajar Wajib Isi Materi</span>
+            </dt>
+            <dd class="text-sm text-slate-600 leading-relaxed pl-7.5 text-pretty">
+              Catat materi pelajaran dan kejadian penting di kelas bersamaan saat melakukan presensi. Guru wajib mengisi materi KBM sebelum data tersimpan untuk memudahkan supervisi kurikulum.
+            </dd>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 space-y-2.5">
+            <dt class="font-bold text-slate-900 text-base flex items-start gap-2.5">
+              <svg class="h-5 w-5 text-emerald-700 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              <span>Rekapitulasi &amp; Persentase Otomatis</span>
+            </dt>
+            <dd class="text-sm text-slate-600 leading-relaxed pl-7.5 text-pretty">
+              Tidak perlu rumus Excel rumit. Sistem secara otomatis menghitung riwayat jurnal harian dan akumulasi persentase kehadiran siswa per kelas per periode kalender akademik.
+            </dd>
+          </div>
+
+          <div class="rounded-xl border border-slate-300 bg-slate-100 p-6 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-slate-800 tracking-wide uppercase">Dokumentasi Lengkap</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1">Eksplorasi Seluruh Fitur</h3>
+              <p class="text-sm text-slate-600 mt-2 text-pretty">Pelajari spesifikasi wizard presensi 4-langkah, manajemen multi-jenjang, dan log WhatsApp gateway.</p>
+            </div>
+            <a href="/fitur/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-800 hover:text-emerald-900 mt-4 group">
+              <span>Buka Detail Fitur Aplikasi</span>
+              <span class="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+            </a>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 5: CARA KERJA PEMESANAN (HOW IT WORKS)
+         ----------------------------------------------------------------------- -->
+    <section id="cara-kerja" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200" aria-labelledby="cara-kerja-heading">
+      <div class="mx-auto max-w-7xl">
+        
+        <div class="max-w-3xl">
+          <h2 id="cara-kerja-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            3 Langkah Mudah Memulai Absen Kelas Online di Sekolah Anda
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[65ch] text-pretty">
+            Tanpa perlu mengerti bahasa pemrograman atau repot menyewa server sendiri.
+          </p>
+        </div>
+
+        <ol class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <li class="relative rounded-xl border border-slate-200 bg-slate-50/50 p-7">
+            <div class="flex items-center justify-between mb-4">
+              <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white font-bold text-base">01</span>
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Langkah Awal</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 text-balance">Kirim Data Sekolah</h3>
+            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed text-pretty">
+              Hubungi kami dan kirimkan data siswa, rombel kelas, serta daftar mata pelajaran dalam format Excel yang biasa dimiliki sekolah.
+            </p>
+          </li>
+
+          <li class="relative rounded-xl border border-slate-200 bg-slate-50/50 p-7">
+            <div class="flex items-center justify-between mb-4">
+              <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white font-bold text-base">02</span>
+              <span class="text-xs font-semibold text-emerald-800 uppercase tracking-wider font-mono">1–2 Hari Kerja</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 text-balance">Proses Setup &amp; Input Data</h3>
+            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed text-pretty">
+              Kami siapkan domain, server cloud hosting privat, instalasi database, pengaturan WhatsApp gateway, hingga input seluruh data master awal Anda.
+            </p>
+          </li>
+
+          <li class="relative rounded-xl border border-slate-200 bg-slate-50/50 p-7">
+            <div class="flex items-center justify-between mb-4">
+              <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white font-bold text-base">03</span>
+              <span class="text-xs font-semibold text-emerald-800 uppercase tracking-wider">Siap Dipakai</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 text-balance">Sistem Siap Digunakan Guru</h3>
+            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed text-pretty">
+              Kami berikan tautan web sekolah dan panduan singkat. Guru mata pelajaran bisa langsung melakukan <strong>absen siswa online</strong> saat mengajar keesokan harinya!
+            </p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 6: TEASER PRODUK EKOSISTEM (CROSS-SELLING)
+         ----------------------------------------------------------------------- -->
+    <aside id="ekosistem" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white border-b border-slate-800" aria-labelledby="ekosistem-heading">
+      <div class="mx-auto max-w-7xl flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+        
+        <div class="max-w-2xl space-y-3">
+          <div class="inline-flex items-center gap-2 rounded-md bg-slate-800 px-2.5 py-1 text-xs font-semibold text-emerald-400 border border-slate-700">
+            Modul Tambahan Terintegrasi
+          </div>
+          <h3 id="ekosistem-heading" class="text-2xl font-bold text-white tracking-tight text-balance">
+            Butuh Sistem Pemantauan Kehadiran Guru &amp; Staf Berbasis GPS?
+          </h3>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed text-pretty max-w-[65ch]">
+            Selain fokus pada sistem <strong>absen digital siswa</strong> per mata pelajaran, kami juga menyediakan modul terpisah untuk <strong>Absen Guru Online Berbasis Titik GPS Lokasi Sekolah</strong> (radius terverifikasi menggunakan formula Haversine) lengkap dengan laporan jurnal kehadiran dan notifikasi WhatsApp ke Kepala Sekolah.
+          </p>
+        </div>
+
+        <div class="shrink-0">
+          <a href="/kontak/" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-5 py-3 text-sm font-semibold text-white hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+            <span>Tanyakan Paket Bundling Guru + Siswa</span>
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
     </aside>
 
-    <!-- SECTION 7: FAQ (PERTANYAAN YANG SERING DIAJUKAN) -->
-    <section id="faq" aria-labelledby="faq-heading">
-      <header>
-        <h2 id="faq-heading">Pertanyaan Seputar Aplikasi Absen Siswa</h2>
-      </header>
+    <!-- -----------------------------------------------------------------------
+         SECTION 7: FAQ (PERTANYAAN YANG SERING DIAJUKAN)
+         ----------------------------------------------------------------------- -->
+    <section id="faq" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200" aria-labelledby="faq-heading">
+      <div class="mx-auto max-w-4xl">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 id="faq-heading" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 text-balance">
+            Pertanyaan Seputar Aplikasi Absen Siswa
+          </h2>
+          <p class="mt-3 text-slate-600 text-sm sm:text-base text-pretty">
+            Jawaban transparan untuk pertanyaan yang sering ditanyakan oleh Kepala Sekolah dan Pengurus Yayasan.
+          </p>
+        </div>
 
-      <details open>
-        <summary><strong>Apakah guru atau siswa perlu mengunduh aplikasi di PlayStore/AppStore?</strong></summary>
-        <p>
-          Tidak perlu. Sistem ini adalah <strong>aplikasi presensi siswa</strong> berbasis web murni yang bisa langsung diakses melalui browser (Chrome atau Safari) di HP Android, iPhone, tablet, maupun laptop tanpa membebani memori penyimpanan HP bapak/ibu guru.
-        </p>
-      </details>
+        <div class="space-y-4">
+          
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors" open>
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50/50">
+              <span class="text-balance">Apakah guru atau siswa perlu mengunduh aplikasi di PlayStore/AppStore?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-100 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[68ch]">
+                Tidak perlu. Sistem ini adalah <strong>aplikasi presensi siswa</strong> berbasis web murni yang bisa langsung diakses melalui browser (Chrome atau Safari) di HP Android, iPhone, tablet, maupun laptop tanpa membebani memori penyimpanan HP bapak/ibu guru.
+              </p>
+            </div>
+          </details>
 
-      <details>
-        <summary><strong>Bagaimana cara kerja pengiriman pesan ke WhatsApp grup kelas?</strong></summary>
-        <p>
-          Sistem terhubung langsung dengan engine WhatsApp Gateway resmi (Fonnte). Saat guru menekan tombol simpan absensi, server secara otomatis memformat teks laporan kehadiran dan mengirimkannya langsung ke nomor ID WhatsApp Grup Kelas yang telah didaftarkan.
-        </p>
-      </details>
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors">
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50/50">
+              <span class="text-balance">Bagaimana cara kerja pengiriman pesan ke WhatsApp grup kelas?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-100 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[68ch]">
+                Sistem terhubung langsung dengan engine WhatsApp Gateway resmi (Fonnte). Saat guru menekan tombol simpan absensi, server secara otomatis memformat teks laporan kehadiran dan mengirimkannya langsung ke nomor ID WhatsApp Grup Kelas yang telah didaftarkan.
+              </p>
+            </div>
+          </details>
 
-      <details>
-        <summary><strong>Bagaimana jika data siswa naik kelas atau ada siswa baru di tahun ajaran baru?</strong></summary>
-        <p>
-          Di awal penggunaan, seluruh data master kami yang inputkan. Untuk penambahan siswa baru atau kenaikan kelas pada semester berikutnya, tersedia fitur pengelolaan Master Data yang sangat praktis di dalam sistem, atau tim teknis kami tetap siap membantu Anda kembali secara berkala.
-        </p>
-      </details>
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors">
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50/50">
+              <span class="text-balance">Bagaimana jika data siswa naik kelas atau ada siswa baru di tahun ajaran baru?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-100 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[68ch]">
+                Di awal penggunaan, seluruh data master kami yang inputkan. Untuk penambahan siswa baru atau kenaikan kelas pada semester berikutnya, tersedia fitur pengelolaan Master Data yang sangat praktis di dalam sistem, atau tim teknis kami tetap siap membantu Anda kembali secara berkala.
+              </p>
+            </div>
+          </details>
 
-      <details>
-        <summary><strong>Apakah ada biaya tersembunyi untuk perpanjangan server dan domain?</strong></summary>
-        <p>
-          Tidak ada. Harga paket yang tertera di halaman harga kami sudah bersifat transparan dan <em>all-in</em> mencakup biaya sewa domain sekolah, cloud hosting, pemeliharaan sistem, serta bantuan teknis sepanjang masa aktif layanan.
-        </p>
-      </details>
+          <details class="group rounded-xl border border-slate-200 bg-white overflow-hidden transition-colors">
+            <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-slate-900 text-base p-6 select-none hover:bg-slate-50/50">
+              <span class="text-balance">Apakah ada biaya tersembunyi untuk perpanjangan server dan domain?</span>
+              <span class="ml-4 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200">
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6 pt-0 border-t border-slate-100 text-sm text-slate-600 leading-relaxed text-pretty">
+              <p class="pt-4 max-w-[68ch]">
+                Tidak ada. Harga paket yang tertera di halaman harga kami sudah bersifat transparan dan <em>all-in</em> mencakup biaya sewa domain sekolah, cloud hosting, pemeliharaan sistem, serta bantuan teknis sepanjang masa aktif layanan.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
     </section>
 
-    <!-- SECTION 8: PENUTUP & CALL TO ACTION -->
-    <section id="cta-penutup" aria-labelledby="cta-heading">
-      <header>
-        <h2 id="cta-heading">Siap Beralih ke Presensi Digital Sekolah yang Lebih Rapi dan Efisien?</h2>
-        <p>
+    <!-- -----------------------------------------------------------------------
+         SECTION 8: PENUTUP & CALL TO ACTION
+         ----------------------------------------------------------------------- -->
+    <section id="cta-penutup" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white" aria-labelledby="cta-heading">
+      <div class="mx-auto max-w-4xl text-center space-y-6">
+        
+        <h2 id="cta-heading" class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight text-balance">
+          Siap Beralih ke Presensi Digital Sekolah yang Lebih Rapi dan Efisien?
+        </h2>
+        
+        <p class="text-base sm:text-lg text-slate-300 max-w-[65ch] mx-auto leading-relaxed text-pretty">
           Hilangkan tumpukan buku absen kertas, pantau kehadiran siswa per jam pelajaran secara akurat, dan bangun kepercayaan wali murid dengan laporan WhatsApp otomatis.
         </p>
-      </header>
 
-      <p>
-        <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20konsultasi%20Aplikasi%20Absen%20Siswa%20Online%20untuk%20sekolah%20kami">
-          Hubungi Kami via WhatsApp Sekarang
-        </a>
-      </p>
+        <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20konsultasi%20Aplikasi%20Absen%20Siswa%20Online%20untuk%20sekolah%20kami" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 rounded-lg bg-emerald-700 px-7 py-4 text-base font-bold text-white shadow-lg hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-all">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+            <span>Hubungi Kami via WhatsApp Sekarang</span>
+          </a>
+          <a href="/harga/" class="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-800 px-6 py-4 text-base font-semibold text-white hover:bg-slate-700 transition-colors">
+            Lihat Rincian Biaya Paket
+          </a>
+        </div>
+
+        <p class="text-xs text-slate-400 pt-2">
+          Konsultasi gratis tanpa kewajiban berlangganan &bull; Respons cepat pada hari &amp; jam kerja
+        </p>
+
+      </div>
     </section>
 
   </main>
 
-  <!-- Bagian Footer Semantik -->
-  <footer>
-    <div>
-      <p><strong>ABSI Presensi Sekolah</strong></p>
-      <p>
-        Layanan <strong>aplikasi presensi sekolah</strong> online terintegrasi jurnal mengajar digital dan WhatsApp gateway otomatis. Paket terima beres siap pakai untuk SD, SMP, SMA, SMK, dan Madrasah di seluruh Indonesia.
-      </p>
+  <!-- =========================================================================
+       FOOTER (INSTITUTIONAL MULTI-COLUMN SEMANTIC)
+       ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 border-t border-slate-800 text-sm px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        
+        <!-- Kolom Brand & Ringkasan -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">Presensi Project</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm text-pretty">
+            Layanan <strong>aplikasi presensi sekolah</strong> online terintegrasi jurnal mengajar digital dan WhatsApp gateway otomatis. Paket terima beres siap pakai untuk SD/MI, SMP/MTs, SMA/MA, SMK, dan Pondok Pesantren di seluruh Indonesia.
+          </p>
+          <div class="pt-2 text-xs text-slate-400">
+            Dikelola dengan server hosting privat terisolasi per institusi sekolah.
+          </div>
+        </div>
+
+        <!-- Kolom Navigasi Utama -->
+        <nav aria-label="Navigasi Footer" class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Halaman Utama</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Fitur Lengkap</a></li>
+            <li><a href="/harga/" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="/demo/" class="hover:text-white transition-colors">Simulasi Demo</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Artikel &amp; Edukasi</a></li>
+          </ul>
+        </nav>
+
+        <!-- Kolom Modul & Layanan -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Modul Sistem</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Presensi Per Mapel</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Jurnal Mengajar Guru</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Notifikasi WhatsApp</a></li>
+            <li><a href="/fitur/" class="hover:text-white transition-colors">Rekapitulasi Otomatis</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Modul GPS Guru</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Kontak & Legal -->
+        <address class="space-y-3 not-italic">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Layanan &amp; Bantuan</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="/tentang-kami/" class="hover:text-white transition-colors">Tentang Kami</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Hubungi Tim Teknis</a></li>
+            <li><a href="/kontak/" class="hover:text-white transition-colors">Ajukan Surat Penawaran</a></li>
+            <li class="pt-2 text-xs text-slate-400">
+              Jam Kerja: Senin - Jumat (08.00 - 17.00 WIB)
+            </li>
+          </ul>
+        </address>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 Presensi Project. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="flex items-center gap-6">
+          <a href="/kontak/" class="hover:text-white">Bantuan Onboarding</a>
+          <a href="/demo/" class="hover:text-white">Live Demo</a>
+          <a href="/" class="hover:text-white">Sitemap</a>
+        </div>
+      </div>
+
     </div>
-
-    <nav aria-label="Navigasi Footer">
-      <p><strong>Navigasi Halaman</strong></p>
-      <ul>
-        <li><a href="/">Beranda</a></li>
-        <li><a href="/fitur/">Fitur Lengkap</a></li>
-        <li><a href="/harga/">Paket Harga</a></li>
-        <li><a href="/demo/">Demo Aplikasi</a></li>
-        <li><a href="/blog/">Artikel &amp; Edukasi</a></li>
-      </ul>
-    </nav>
-
-    <address>
-      <p><strong>Informasi &amp; Kontak</strong></p>
-      <ul>
-        <li><a href="/tentang-kami/">Tentang Kami</a></li>
-        <li><a href="/kontak/">Hubungi Tim Teknis</a></li>
-        <li><a href="/kontak/">Ajukan Surat Penawaran</a></li>
-        <li>Layanan Teknis: Online Setiap Hari Kerja</li>
-      </ul>
-    </address>
-
-    <p><small>&copy; 2026 Sistem Presensi Digital Sekolah. Seluruh Hak Cipta Dilindungi.</small></p>
   </footer>
+
+  <!-- =========================================================================
+       VANILLA JAVASCRIPT: ACCESSIBLE MOBILE DRAWER TOGGLE
+       ========================================================================= -->
+  <script>
+    (function() {
+      const btn = document.getElementById('mobile-menu-btn');
+      const nav = document.getElementById('mobile-nav');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (btn && nav) {
+        btn.addEventListener('click', function() {
+          const isOpen = nav.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', isOpen);
+          if (iconOpen && iconClose) {
+            iconOpen.classList.toggle('hidden', isOpen);
+            iconClose.classList.toggle('hidden', !isOpen);
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
