@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO On-Page Meta Data -->
+  <title>Cara Membuat Absen di Excel &amp; Word yang Rapi Otomatis</title>
+  <meta name="description" content="Langkah mudah cara membuat absen di Excel dan cara membuat absen di Word untuk daftar hadir kelas. Lengkap rumus COUNTIF otomatis &amp; solusi webnya!">
+  <meta name="keywords" content="cara membuat absen di excel, cara buat absen di excel, cara membuat absen di word, cara bikin absen di excel">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- Open Graph Meta Tags (Preview WhatsApp Grup Guru & Kepala Sekolah) -->
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Presensi Project">
+  <meta property="og:url" content="https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/">
+  <meta property="og:title" content="Cara Membuat Absen di Excel &amp; Word yang Rapi Otomatis">
+  <meta property="og:description" content="Langkah mudah cara membuat absen di Excel dan cara membuat absen di Word untuk daftar hadir kelas. Lengkap rumus COUNTIF otomatis &amp; solusi webnya!">
+  <meta property="og:image" content="https://presensiproject.online/assets/og-cara-membuat-absen-di-excel-dan-word.jpg">
+  <meta property="article:published_time" content="2026-11-14T18:20:00+07:00">
+  <meta property="article:modified_time" content="2026-11-14T18:20:00+07:00">
+  <meta property="article:section" content="Tutorial Administrasi Kelas">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cara Membuat Absen di Excel &amp; Word yang Rapi Otomatis">
+  <meta name="twitter:description" content="Langkah mudah cara membuat absen di Excel dan cara membuat absen di Word untuk daftar hadir kelas. Lengkap rumus COUNTIF otomatis &amp; solusi webnya!">
+  <meta name="twitter:image" content="https://presensiproject.online/assets/og-cara-membuat-absen-di-excel-dan-word.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data (@graph: BlogPosting + BreadcrumbList + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/#article",
+        "headline": "Tutorial Cara Membuat Absen di Excel & Word yang Rapi untuk Sekolah",
+        "description": "Langkah mudah cara membuat absen di Excel dan cara membuat absen di Word untuk daftar hadir kelas. Lengkap rumus COUNTIF otomatis & solusi webnya!",
+        "image": "https://presensiproject.online/assets/og-cara-membuat-absen-di-excel-dan-word.jpg",
+        "datePublished": "2026-11-14",
+        "dateModified": "2026-11-14",
+        "inLanguage": "id-ID",
+        "author": {
+          "@type": "Organization",
+          "name": "Tim Litbang Presensi Project",
+          "url": "https://presensiproject.online/tentang-kami/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Presensi Project",
+          "url": "https://presensiproject.online/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://presensiproject.online/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/"
+        },
+        "keywords": [
+          "cara membuat absen di excel",
+          "cara buat absen di excel",
+          "cara membuat absen di word",
+          "cara bikin absen di excel"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://presensiproject.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://presensiproject.online/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Cara Membuat Absen di Excel & Word",
+            "item": "https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://presensiproject.online/blog/cara-membuat-absen-di-excel-dan-word/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bagaimana cara mengatur tabel absen di Excel supaya tidak terpotong saat di-print?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ubah orientasi halaman ke Landscape pada menu Page Layout, pilih ukuran kertas A4 atau F4, lalu aktifkan fitur Fit Sheet on One Page (atau Fit All Columns on One Page) sebelum mencetak. Kecilkan juga lebar kolom tanggal 1 sampai 31 menjadi ukuran 3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Rumus apa yang dipakai saat membuat absen di Excel agar H, S, I, A terhitung otomatis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gunakan rumus COUNTIF, misalnya =COUNTIF(E6:AI6; \"H\") untuk menghitung jumlah Hadir, lalu ganti huruf \"H\" dengan \"S\", \"I\", atau \"A\" untuk kolom Sakit, Izin, dan Alpa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah file Excel daftar siswa yang sudah ada bisa langsung dijadikan aplikasi absen online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bisa. Melalui layanan Web Absen Mapel Sekolah Terima Beres dari Presensi Project, sekolah cukup menyerahkan file Excel daftar siswa dan rombel yang sudah ada. Tim kami akan mengimpor seluruh datanya ke dalam sistem web presensi sekolah tanpa perlu ketik ulang."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS Compiled Output -->
+  <link rel="stylesheet" href="../../dist/output.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-600 selection:text-white">
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION (STANDARDIZED DESKTOP + MOBILE DRAWER)
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+
+        <!-- Brand Identity -->
+        <a href="../../" class="flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 rounded-lg">
+          <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-700 text-white font-bold text-lg shadow-xs">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold tracking-tight text-slate-900 leading-tight">Presensi Project</span>
+            <span class="text-xs font-medium text-slate-500 leading-tight">Sistem Presensi Sekolah Terima Beres</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Navigasi Utama" class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <a href="../../" class="hover:text-slate-900 transition-colors">Beranda</a>
+          <a href="../../fitur/" class="hover:text-slate-900 transition-colors">Fitur</a>
+          <a href="../../harga/" class="hover:text-slate-900 transition-colors">Paket Harga</a>
+          <a href="../../demo/" class="hover:text-slate-900 transition-colors">Demo</a>
+          <a href="../../tentang-kami/" class="hover:text-slate-900 transition-colors">Tentang Kami</a>
+          <a href="../../kontak/" class="hover:text-slate-900 transition-colors">Kontak</a>
+          <a href="../../blog/" class="text-slate-900 font-semibold border-b-2 border-emerald-700 pb-1">Blog</a>
+        </nav>
+
+        <!-- Header CTA Action -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://wa.me/6287865712625?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+            <span>Konsultasi WA</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" class="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700" aria-label="Buka Menu Navigasi">
+            <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-nav" aria-label="Navigasi Mobile" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-2 shadow-lg">
+      <a href="../../" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Beranda</a>
+      <a href="../../fitur/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Fitur</a>
+      <a href="../../harga/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Paket Harga</a>
+      <a href="../../demo/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Demo Aplikasi</a>
+      <a href="../../tentang-kami/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Tentang Kami</a>
+      <a href="../../kontak/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">Kontak</a>
+      <a href="../../blog/" class="block px-3 py-2 rounded-md text-base font-semibold text-emerald-800 bg-emerald-50">Blog</a>
+      <div class="pt-3 border-t border-slate-100">
+        <a href="https://wa.me/6287865712625?text=Halo%20Admin,%20saya%20ingin%20Konsultasi%20Presensi%20Sekolah" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-base font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+          Hubungi Admin via WhatsApp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content" class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl space-y-8">
+
+      <!-- Semantic Breadcrumbs -->
+      <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-500">
+        <a href="../../" class="hover:text-slate-900 transition-colors">Beranda</a>
+        <span aria-hidden="true">&raquo;</span>
+        <a href="../../blog/" class="hover:text-slate-900 transition-colors">Blog</a>
+        <span aria-hidden="true">&raquo;</span>
+        <span class="text-slate-800 font-semibold" aria-current="page">Cara Membuat Absen di Excel &amp; Word</span>
+      </nav>
+
+      <!-- Article Wrapper -->
+      <article class="space-y-8">
+
+        <!-- Article Header & Intro (PAS Ringkas) -->
+        <header class="space-y-5 border-b border-slate-200 pb-8">
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200">
+              Tutorial Administrasi Kelas
+            </span>
+            <time datetime="2026-11-14" class="text-xs font-medium text-slate-500">
+              14 November 2026
+            </time>
+            <span class="text-xs font-medium text-slate-400" aria-hidden="true">&bull;</span>
+            <span class="text-xs font-medium text-slate-500">5 Menit Membaca</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight text-balance">
+            Tutorial Cara Membuat Absen di Excel &amp; Word yang Rapi untuk Sekolah
+          </h1>
+
+          <div class="space-y-4 pt-2 text-base sm:text-lg text-slate-600 leading-relaxed max-w-[68ch] text-pretty">
+            <p>
+              Setiap awal tahun ajaran baru, hampir semua wali kelas dan sekretaris kelas sibuk membuka laptop untuk menyiapkan daftar hadir. Mencari tahu <strong class="text-slate-900">cara membuat absen di Excel</strong> maupun Word yang rapi memang penting supaya lembaran kelas enak dilihat.
+            </p>
+            <p class="text-sm sm:text-base">
+              Masalah yang paling sering kejadian, begitu tabel tanggal 1 sampai 31 selesai diketik dan mau di-<em>print</em>, ujung kolom tanggalnya malah kepotong ke halaman berikutnya. Belum lagi kalau harus menjumlahkan kode Sakit, Izin, dan Alpa secara manual di akhir bulan.
+            </p>
+            <p class="text-sm sm:text-base">
+              Di panduan singkat ini, kita bahas langkah praktis membuat tabel daftar hadir di Excel lengkap dengan rumus otomatisnya, cara cepat bikin tabel cetak di Word, serta alternatif yang jauh lebih hemat tenaga untuk guru.
+            </p>
+          </div>
+        </header>
+
+        <!-- Body Content -->
+        <div class="space-y-8 text-base sm:text-lg text-slate-700 leading-relaxed">
+
+          <!-- =====================================================================
+               H2 1: CARA BUAT ABSEN DI EXCEL + RUMUS OTOMATIS
+               ===================================================================== -->
+          <section class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-10 mb-4">
+              Cara Buat Absen di Excel Lengkap dengan Rumus Hitung Otomatis
+            </h2>
+            <p>
+              Kelebihan utama memakai Microsoft Excel dibanding ketik biasa adalah kemampuannya menjumlahkan kehadiran secara otomatis. Ikuti dua tahap <strong class="text-slate-900">cara buat absen di Excel</strong> berikut ini supaya tabelnya langsung rapi dalam 5 menit:
+            </p>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-8 mb-3">
+              1. Langkah Mengatur Kolom Tanggal, Merge Cell, dan Kode H/S/I/A
+            </h3>
+            <ol class="list-decimal list-inside space-y-2.5 pl-2">
+              <li>Buka lembar kerja baru di Excel, lalu sisakan baris 1 sampai 3 untuk judul (<strong>DAFTAR HADIR SISWA KELAS...</strong> dan <strong>BULAN...</strong>).</li>
+              <li>Mulai dari baris ke-4, ketik judul kolom: <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">No</code> (Kolom A), <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">NISN</code> (Kolom B), <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Nama Siswa</code> (Kolom C), dan <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">L/P</code> (Kolom D).</li>
+              <li>Untuk membuat deretan tanggal <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">1</code> sampai <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">31</code> tanpa mengetik satu-satu: ketik angka <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">1</code> di sel <strong>E5</strong> dan angka <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">2</code> di sel <strong>F5</strong>, blok keduanya, lalu tarik titik kotak kecil di pojok kanan bawah sel ke arah kanan sampai muncul angka <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">31</code> (sel <strong>AI5</strong>).</li>
+              <li><strong>Trik agar 31 kolom tanggal tidak kepotong saat di-print:</strong> Blok huruf kepala kolom <strong>E sampai AI</strong> di bagian paling atas Excel, klik kanan salah satu huruf kolomnya, pilih <strong>Column Width</strong>, lalu ketik angka <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">3</code> dan tekan Enter. Seketika seluruh kotak tanggal akan menyempit seragam!</li>
+              <li>Blok sel <strong>E4 sampai AI4</strong> di atas angka tanggal tadi, klik menu <strong>Merge &amp; Center</strong>, lalu beri judul <strong>Tanggal Kehadiran</strong>.</li>
+              <li>Di sebelah kanan tanggal 31 (mulai kolom <strong>AJ4</strong>), buat kolom rekap: <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">H</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">S</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">I</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">A</code>, dan <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">% Hadir</code>.</li>
+            </ol>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-8 mb-3">
+              2. Cara Bikin Absen di Excel agar Menghitung Total Kehadiran Secara Otomatis
+            </h3>
+            <p>
+              Supaya Bapak/Ibu tidak perlu menghitung huruf satu per satu di akhir bulan, lengkapi <strong class="text-slate-900">cara bikin absen di Excel</strong> tadi dengan rumus <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">COUNTIF</code> pada kolom rekap paling kanan:
+            </p>
+
+            <!-- KOTAK RUMUS EXCEL SIAP COPY-PASTE -->
+            <div class="my-5 rounded-xl bg-slate-900 text-slate-100 p-5 sm:p-6 space-y-3 font-mono text-xs sm:text-sm shadow-sm">
+              <div class="text-emerald-400 font-sans font-bold text-xs uppercase tracking-wider">
+                Rumus Excel Otomatis Siap Copy-Paste (Contoh Baris Siswa Pertama di Baris ke-6, Tanggal di E6:AI6)
+              </div>
+              <ul class="space-y-2 leading-relaxed">
+                <li><span class="text-slate-400">Jumlah Hadir (Kolom AJ6 / H):</span> <code class="text-emerald-300 font-bold">=COUNTIF(E6:AI6; "H")</code></li>
+                <li><span class="text-slate-400">Jumlah Sakit (Kolom AK6 / S):</span> <code class="text-emerald-300 font-bold">=COUNTIF(E6:AI6; "S")</code></li>
+                <li><span class="text-slate-400">Jumlah Izin (Kolom AL6 / I):</span> <code class="text-emerald-300 font-bold">=COUNTIF(E6:AI6; "I")</code></li>
+                <li><span class="text-slate-400">Jumlah Alpa (Kolom AM6 / A):</span> <code class="text-emerald-300 font-bold">=COUNTIF(E6:AI6; "A")</code></li>
+                <li><span class="text-slate-400">Persentase Kehadiran (misal 22 hari efektif):</span> <code class="text-emerald-300 font-bold">=(AJ6/22)*100%</code></li>
+              </ul>
+            </div>
+
+            <p>
+              Setelah rumus di baris siswa pertama selesai, cukup blok kelima sel rumus tersebut lalu tarik (<em>drag</em>) ke bawah sampai nomor urut siswa terakhir. Jika rumus memunculkan pesan error, ganti tanda titik koma (<code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">;</code>) menjadi koma (<code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">,</code>) sesuai pengaturan bahasa laptop Anda.
+            </p>
+            <p class="text-sm sm:text-base text-slate-600 bg-slate-100/80 border-l-4 border-emerald-600 px-4 py-3 rounded-r-lg">
+              Kalau Bapak/Ibu sedang buru-buru dan ingin langsung memakai lembar kerja yang sudah jadi tanpa mengatur kolom dari awal, silakan unduh file siap pakai pada halaman <a href="../download-format-absen-siswa-excel/" class="text-emerald-700 font-semibold hover:underline">download format absen siswa excel</a> kami.
+            </p>
+          </section>
+
+          <!-- =====================================================================
+               H2 2: CARA MEMBUAT ABSEN DI WORD UNTUK CETAK CEPAT
+               ===================================================================== -->
+          <section class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-10 mb-4">
+              Cara Membuat Absen di Word untuk Daftar Hadir Cetak Cepat
+            </h2>
+            <p>
+              Kalau Bapak/Ibu hanya butuh lembar daftar hadir untuk ditempel di papan kelas atau buku tanda tangan rapat tanpa rumus hitung, <strong class="text-slate-900">cara membuat absen di Word</strong> jauh lebih simpel:
+            </p>
+            <ol class="list-decimal list-inside space-y-2.5 pl-2">
+              <li>Buka dokumen baru di Microsoft Word, masuk ke tab <strong>Layout</strong> (<em>Page Layout</em>).</li>
+              <li>Klik <strong>Orientation</strong> lalu ubah menjadi <strong>Landscape</strong> (memanjang ke samping), dan atur <strong>Margins</strong> ke <strong>Narrow</strong> agar ruang kertas lebih lega.</li>
+              <li>Masuk ke tab <strong>Insert</strong> &rarr; klik <strong>Table</strong> &rarr; pilih <strong>Insert Table</strong>.</li>
+              <li>Untuk daftar hadir mingguan kelas, masukkan <strong>Jumlah Kolom (Columns): 10</strong> (<code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">No</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">NIS</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Nama Siswa</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">L/P</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Senin</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Selasa</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Rabu</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Kamis</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Jumat</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">Keterangan</code>) dan <strong>Jumlah Baris (Rows): 36</strong>.</li>
+              <li><strong>Trik agar judul tabel muncul otomatis di halaman ke-2:</strong> Blok baris paling atas (kepala tabel), masuk ke tab <strong>Table Layout</strong> di pojok kanan atas, lalu klik tombol <strong>Repeat Header Rows</strong>.</li>
+            </ol>
+            <p>
+              Ingin tahu perbandingan metode tabel ini dengan Google Form, QR Code, atau web sekolah? Simak panduan induk <a href="../cara-membuat-absen-online/" class="text-emerald-700 font-semibold hover:underline">cara membuat absen kehadiran</a> digital yang sudah kami susun.
+            </p>
+
+            <!-- MID-CONTENT CTA CALLOUT BOX -->
+            <aside class="cta-box my-8 rounded-xl border-2 border-emerald-600 bg-emerald-50/80 p-6 sm:p-7 space-y-4 shadow-xs" aria-label="Solusi Tanpa Ketik Tabel Sendiri">
+              <div class="space-y-2">
+                <p class="text-xs font-bold uppercase tracking-wider text-emerald-800">Solusi Tanpa Ketik Tabel Sendiri</p>
+                <p class="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug">
+                  Tidak Punya Waktu Buat Setting Form &amp; Input Ratusan Nama Siswa Sendiri?
+                </p>
+                <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Serahkan pada layanan <strong>Web Absen Mapel Sekolah Terima Beres</strong> kami! Harga sudah termasuk Domain, Cloud Hosting, Setting Awal, dan <strong>GRATIS Bantuan Input Data Master Siswa &amp; Guru dari File Excel</strong>. Guru tinggal buka HP dan klik!
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center gap-3 pt-1">
+                <a href="../../fitur/" class="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 transition-colors">
+                  Lihat Fitur Lengkap &rarr;
+                </a>
+                <a href="../../demo/" class="inline-flex items-center justify-center rounded-lg border border-emerald-700 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50 transition-colors">
+                  Coba Demo di HP
+                </a>
+              </div>
+            </aside>
+          </section>
+
+          <!-- =====================================================================
+               H2 3: KENDALA TABEL EXCEL & WORD UNTUK GURU MAPEL
+               ===================================================================== -->
+          <section class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-10 mb-4">
+              Mengapa Tabel Excel &amp; Word Kurang Efektif untuk Presensi Guru Mapel?
+            </h2>
+            <p>
+              Membuat tabel di Excel atau Word memang sangat membantu untuk 1 kelas perwalian. Namun ketika dipakai oleh seluruh guru mata pelajaran di sekolah, ada empat kendala yang sering bikin repot:
+            </p>
+            <ol class="list-decimal list-inside space-y-3 pl-2">
+              <li><strong>Tidak Praktis Dibawa Masuk ke Banyak Kelas:</strong> Guru mapel yang mengajar 8 sampai 12 kelas paralel sehari tentu kerepotan kalau harus membuka file Excel di laptop setiap ganti jam pelajaran.</li>
+              <li><strong>Data Tersebar di Laptop Masing-Masing Guru:</strong> Saat wali kelas atau Guru BK butuh rekap cepat di pertengahan bulan, mereka harus meminta file Excel ke belasan guru mapel satu per satu.</li>
+              <li><strong>Rumus Rawan Terhapus Tidak Sengaja:</strong> Cukup satu kali salah tekan tombol <em>Delete</em> pada kolom rekap Excel, angka total kehadiran satu kelas langsung meleset.</li>
+              <li><strong>Tetap Harus Cetak Kertas atau Salin Ulang:</strong> Jika tabel Word/Excel dicetak ke buku jurnal fisik, pada akhirnya guru tetap harus menghitung dan mengetik ulang angkanya menjelang pembagian rapor.</li>
+            </ol>
+          </section>
+
+          <!-- =====================================================================
+               H2 4: SOLUSI WEB ABSEN MAPEL SEKOLAH & TABEL PERBANDINGAN
+               ===================================================================== -->
+          <section class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-10 mb-4">
+              Tidak Perlu Ketik Tabel Sendiri &mdash; Kirim Excel Siswa Anda, Kami Buatkan Web Absennya!
+            </h2>
+            <p>
+              Kabar baiknya, kalau sekolah Bapak/Ibu sudah punya file Excel daftar nama siswa dari operator Dapodik atau TU, Anda tidak perlu lagi mengatur lebar kolom atau merangkai rumus <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">COUNTIF</code> manual per kelas.
+            </p>
+            <p>
+              Lewat layanan <a href="../../fitur/" class="text-emerald-700 font-semibold hover:underline">aplikasi absen siswa otomatis</a> berkonsep <strong>"Terima Beres"</strong> dari Presensi Project, cukup kirimkan file Excel daftar siswa dan rombel tersebut kepada tim kami. Seluruh data siswa, kelas, hingga akun guru mapel akan kami inputkan gratis sampai sistem web siap dipakai lewat HP!
+            </p>
+            <p>
+              Berikut perbandingan objektif antara membuat tabel absen di Excel/Word sendiri dengan memakai Web Absen Mapel Sekolah Terima Beres:
+            </p>
+
+            <!-- TABEL HTML PERBANDINGAN OBJEKTIF (WAJIB PILAR 3) -->
+            <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+              <table class="w-full text-left text-sm sm:text-base border-collapse bg-white">
+                <thead class="bg-slate-900 text-white">
+                  <tr>
+                    <th class="py-3 px-4 font-semibold">Indikator Perbandingan</th>
+                    <th class="py-3 px-4 font-semibold">Tabel Excel / Word (Mandiri / DIY)</th>
+                    <th class="py-3 px-4 font-semibold text-emerald-300">Web Absen Mapel Sekolah (Terima Beres)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700">
+                  <tr class="hover:bg-slate-50 transition-colors">
+                    <td class="py-3 px-4 font-medium text-slate-900">Waktu Pembuatan Awal</td>
+                    <td class="py-3 px-4">Harus atur lebar kolom, <em>merge cell</em>, &amp; pasang rumus per kelas</td>
+                    <td class="py-3 px-4 font-semibold text-emerald-700">Terima Beres (Gratis diinputkan tim kami dari file Excel sekolah)</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50 transition-colors">
+                    <td class="py-3 px-4 font-medium text-slate-900">Risiko Siswa Titip Absen</td>
+                    <td class="py-3 px-4 text-rose-700 font-medium">Kertas absen keliling kelas rawan dicentang teman sendiri</td>
+                    <td class="py-3 px-4 font-semibold text-emerald-700">Aman 100% (Presensi diklik langsung oleh akun Guru di HP)</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50 transition-colors">
+                    <td class="py-3 px-4 font-medium text-slate-900">Kepraktisan Saat Mengajar</td>
+                    <td class="py-3 px-4">Harus bawa tumpukan kertas atau buka laptop di tiap kelas</td>
+                    <td class="py-3 px-4 font-semibold text-emerald-700">Cukup 30 detik dari HP Guru (Klik <em>Tandai Semua Hadir</em>)</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50 transition-colors">
+                    <td class="py-3 px-4 font-medium text-slate-900">Rekapitulasi Akhir Semester</td>
+                    <td class="py-3 px-4">Harus gabungkan <em>sheet</em> bulanan &amp; cek rumus yang bergeser</td>
+                    <td class="py-3 px-4 font-semibold text-emerald-700">Otomatis 100% Real-Time (Siap unduh PDF berkop &amp; Excel)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Seluruh hasil presensi harian langsung diolah menjadi laporan <a href="../../fitur/" class="text-emerald-700 font-semibold hover:underline">rekapitulasi absen siswa</a> bulanan maupun semesteran tanpa takut ada rumus Excel yang terhapus.
+            </p>
+
+            <!-- END-CONTENT CTA CALLOUT BOX (PENUTUP & KONVERSI UTAMA) -->
+            <aside class="cta-box my-10 rounded-2xl border-2 border-emerald-600 bg-slate-900 text-white p-6 sm:p-8 space-y-5 shadow-md" aria-label="Kirim File Excel Anda, Kami Proses Sampai Jadi">
+              <div class="space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                  Kirim File Excel Anda, Kami Proses Sampai Jadi
+                </div>
+                <p class="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-snug">
+                  Punya File Excel Daftar Siswa? Ubah Jadi Web Absen Sekolah Sekarang!
+                </p>
+                <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                  Tidak perlu lagi mengatur lebar kolom atau mencetak berlembar-lembar kertas absen tiap bulan. Kirimkan file Excel siswa dan jadwal mapel sekolah Bapak/Ibu&mdash;tim Presensi Project siapkan sistem web resminya sampai siap dipakai seluruh guru.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center gap-3 pt-1">
+                <a href="https://wa.me/6287865712625?text=Halo%20Admin%20Presensi%20Project%2C%20saya%20ingin%20konsultasi%20ubah%20data%20Excel%20siswa%20jadi%20Web%20Absen%20Sekolah%20Terima%20Beres" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 text-sm sm:text-base font-bold text-white shadow-xs hover:bg-emerald-500 transition-colors">
+                  Konsultasi Gratis via WhatsApp &rarr;
+                </a>
+                <a href="../../harga/" class="inline-flex items-center justify-center rounded-xl border border-slate-600 bg-slate-800 px-5 py-3 text-sm sm:text-base font-bold text-slate-100 hover:bg-slate-700 transition-colors">
+                  Cek Paket Harga Tahunan
+                </a>
+              </div>
+            </aside>
+          </section>
+
+          <!-- =====================================================================
+               H2 5: PERTANYAAN UMUM (FAQ)
+               ===================================================================== -->
+          <section class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-10 mb-4">
+              Pertanyaan Umum Seputar Cara Membuat Absen di Excel &amp; Word
+            </h2>
+
+            <div class="space-y-4 my-6">
+              <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-2xs">
+                <h3 class="font-bold text-slate-900 text-base sm:text-lg">
+                  Bagaimana cara mengatur tabel absen di Excel supaya tidak terpotong saat di-print?
+                </h3>
+                <p class="text-sm sm:text-base text-slate-700 mt-2 leading-relaxed">
+                  Ubah orientasi halaman ke Landscape pada menu Page Layout, pilih ukuran kertas A4 atau F4, lalu aktifkan fitur Fit Sheet on One Page (atau Fit All Columns on One Page) sebelum mencetak. Kecilkan juga lebar kolom tanggal 1 sampai 31 menjadi ukuran 3.
+                </p>
+              </div>
+
+              <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-2xs">
+                <h3 class="font-bold text-slate-900 text-base sm:text-lg">
+                  Rumus apa yang dipakai saat membuat absen di Excel agar H, S, I, A terhitung otomatis?
+                </h3>
+                <p class="text-sm sm:text-base text-slate-700 mt-2 leading-relaxed">
+                  Gunakan rumus COUNTIF, misalnya <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">=COUNTIF(E6:AI6; "H")</code> untuk menghitung jumlah Hadir, lalu ganti huruf <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">"H"</code> dengan <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">"S"</code>, <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">"I"</code>, atau <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-sm">"A"</code> untuk kolom Sakit, Izin, dan Alpa.
+                </p>
+              </div>
+
+              <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-2xs">
+                <h3 class="font-bold text-slate-900 text-base sm:text-lg">
+                  Apakah file Excel daftar siswa yang sudah ada bisa langsung dijadikan aplikasi absen online?
+                </h3>
+                <p class="text-sm sm:text-base text-slate-700 mt-2 leading-relaxed">
+                  Bisa. Melalui layanan Web Absen Mapel Sekolah Terima Beres dari Presensi Project, sekolah cukup menyerahkan file Excel daftar siswa dan rombel yang sudah ada. Tim kami akan mengimpor seluruh datanya ke dalam sistem web presensi sekolah tanpa perlu ketik ulang.
+                </p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Author / Editorial Signature -->
+        <div class="mt-12 pt-8 border-t border-slate-200 flex items-center gap-4">
+          <div class="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold text-lg">
+            PP
+          </div>
+          <div>
+            <div class="font-bold text-slate-900">Tim Litbang Presensi Project</div>
+            <div class="text-xs text-slate-500">Divisi Edukasi &amp; Administrasi Digital Sekolah</div>
+          </div>
+        </div>
+
+        <!-- Post Action & Navigation -->
+        <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <a href="../../blog/" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-slate-900 transition-colors">
+            <span aria-hidden="true">&larr;</span>
+            <span>Kembali ke Daftar Blog Edukasi</span>
+          </a>
+          <a href="../../demo/" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors">
+            <span>Uji Coba Simulasi Demo Presensi</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (INSTITUTIONAL MULTI-COLUMN SEMANTIC)
+       ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 border-t border-slate-800 text-sm px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+
+        <!-- Kolom Brand & Ringkasan -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">Presensi Project</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm text-pretty">
+            Penyedia layanan <strong>jasa absen online</strong> dan sistem presensi sekolah terima beres. Membantu digitalisasi sekolah dan madrasah di seluruh Indonesia.
+          </p>
+          <div class="pt-2 text-xs text-slate-400">
+            Dikelola dengan server hosting privat terisolasi per institusi sekolah.
+          </div>
+        </div>
+
+        <!-- Kolom Navigasi Utama -->
+        <nav aria-label="Navigasi Footer" class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Halaman Utama</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="../../" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="../../fitur/" class="hover:text-white transition-colors">Fitur Lengkap</a></li>
+            <li><a href="../../harga/" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="../../demo/" class="hover:text-white transition-colors">Demo Aplikasi</a></li>
+            <li><a href="../../blog/" class="hover:text-white transition-colors">Artikel &amp; Edukasi</a></li>
+          </ul>
+        </nav>
+
+        <!-- Kolom Modul & Layanan -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Modul Sistem</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="../../fitur/" class="hover:text-white transition-colors">Presensi Per Mapel</a></li>
+            <li><a href="../../fitur/" class="hover:text-white transition-colors">Jurnal Mengajar Guru</a></li>
+            <li><a href="../../fitur/" class="hover:text-white transition-colors">Notifikasi WhatsApp</a></li>
+            <li><a href="../../fitur/" class="hover:text-white transition-colors">Rekapitulasi Otomatis</a></li>
+            <li><a href="../../kontak/" class="hover:text-white transition-colors">Modul GPS Guru</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Kontak & Legal -->
+        <address class="space-y-3 not-italic">
+          <p class="text-xs font-bold text-white uppercase tracking-wider">Konsultasi &amp; Pengadaan</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="../../tentang-kami/" class="hover:text-white transition-colors">Tentang Kami</a></li>
+            <li><a href="../../kontak/" class="hover:text-white transition-colors">Konsultasi Anggaran BOS</a></li>
+            <li><a href="../../kontak/" class="hover:text-white transition-colors">Permintaan Invoice / SPJ</a></li>
+            <li class="pt-2 text-xs text-slate-400">
+              Jam Layanan: Senin &ndash; Jumat (08.00 &ndash; 17.00 WIB)
+            </li>
+          </ul>
+        </address>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 Presensi Project. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="flex items-center gap-6">
+          <a href="../../kontak/" class="hover:text-white">Bantuan Onboarding</a>
+          <a href="../../demo/" class="hover:text-white">Live Demo</a>
+          <a href="../../sitemap.xml" class="hover:text-white">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       VANILLA JAVASCRIPT: ACCESSIBLE MOBILE DRAWER TOGGLE
+       ========================================================================= -->
+  <script>
+    (function() {
+      const btn = document.getElementById('mobile-menu-btn');
+      const nav = document.getElementById('mobile-nav');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (btn && nav) {
+        btn.addEventListener('click', function() {
+          const isOpen = nav.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', isOpen);
+          if (iconOpen && iconClose) {
+            iconOpen.classList.toggle('hidden', isOpen);
+            iconClose.classList.toggle('hidden', !isOpen);
+          }
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
